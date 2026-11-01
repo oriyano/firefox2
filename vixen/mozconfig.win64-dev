@@ -1,0 +1,16 @@
+# Vixen developer build for Windows x64: fast to build, debuggable, not for release.
+ac_add_options --target=x86_64-pc-windows-msvc
+ac_add_options --with-branding=browser/branding/vixen
+ac_add_options --with-app-basename=Vixen
+ac_add_options --enable-optimize
+ac_add_options --disable-debug
+
+ac_add_options --disable-crashreporter
+ac_add_options --disable-updater
+ac_add_options --disable-maintenance-service
+ac_add_options --disable-default-browser-agent
+ac_add_options --disable-update-agent
+ac_add_options --disable-bits-download
+ac_add_options --disable-eme
+
+mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-vixen-dev
