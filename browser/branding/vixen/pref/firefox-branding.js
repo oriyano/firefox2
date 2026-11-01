@@ -30,3 +30,45 @@ pref("app.update.badgeWaitTime", 0);
 // Number of usages of the web console.
 // If this is less than 5, then pasting code into the web console is disabled
 pref("devtools.selfxss.count", 5);
+
+// Vixen: no telemetry, studies or data upload.
+pref("datareporting.healthreport.uploadEnabled", false, locked);
+pref("datareporting.policy.dataSubmissionEnabled", false, locked);
+pref("datareporting.usage.uploadEnabled", false, locked);
+pref("toolkit.telemetry.enabled", false, locked);
+pref("toolkit.telemetry.unified", false, locked);
+pref("toolkit.telemetry.archive.enabled", false, locked);
+pref("toolkit.telemetry.server", "data:,", locked);
+pref("toolkit.telemetry.newProfilePing.enabled", false, locked);
+pref("toolkit.telemetry.shutdownPingSender.enabled", false, locked);
+pref("toolkit.telemetry.firstShutdownPing.enabled", false, locked);
+pref("toolkit.telemetry.updatePing.enabled", false, locked);
+pref("toolkit.telemetry.bhrPing.enabled", false, locked);
+pref("app.shield.optoutstudies.enabled", false, locked);
+pref("app.normandy.enabled", false, locked);
+pref("app.normandy.api_url", "", locked);
+pref("nimbus.rollouts.enabled", false, locked);
+pref("browser.discovery.enabled", false, locked);
+pref("extensions.htmlaboutaddons.recommendations.enabled", false, locked);
+pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false, locked);
+pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false, locked);
+pref("breakpad.reportURL", "", locked);
+pref("browser.tabs.crashReporting.sendReport", false, locked);
+
+// Vixen: no stories, sponsored content or analytics on the New Tab page.
+pref("browser.newtabpage.activity-stream.feeds.section.topstories", false, locked);
+pref("browser.newtabpage.activity-stream.feeds.system.topstories", false, locked);
+pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false, locked);
+pref("browser.newtabpage.activity-stream.feeds.adsfeed", false, locked);
+pref("browser.newtabpage.activity-stream.feeds.inferredpersonalizationfeed", false, locked);
+pref("browser.newtabpage.activity-stream.feeds.newtabattributionfeed", false, locked);
+pref("browser.newtabpage.activity-stream.feeds.telemetry", false, locked);
+pref("browser.newtabpage.activity-stream.telemetry", false, locked);
+pref("browser.newtabpage.activity-stream.telemetry.privatePing.enabled", false, locked);
+pref("browser.newtabpage.activity-stream.showSponsored", false, locked);
+pref("browser.newtabpage.activity-stream.system.showSponsored", false, locked);
+pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false, locked);
+pref("browser.newtabpage.activity-stream.unifiedAds.adsFeed.enabled", false, locked);
+pref("browser.newtabpage.activity-stream.unifiedAds.spocs.enabled", false, locked);
+pref("browser.newtabpage.activity-stream.unifiedAds.tiles.enabled", false, locked);
+pref("browser.newtabpage.activity-stream.discoverystream.endpoints", "data:,", locked);

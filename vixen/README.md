@@ -49,6 +49,10 @@ The installer is not code-signed yet, so Windows SmartScreen will warn when it r
   never touches an existing Firefox profile.
 - Removed: crash reporter, Mozilla updater and maintenance service, default-browser agent,
   background update agent, and DRM (Encrypted Media Extensions).
+- Off and locked: all telemetry, Glean and usage uploads, studies and experiments (Normandy,
+  Nimbus), extension and feature recommendations, and the New Tab stories feed, sponsored
+  tiles and New Tab analytics (`browser/branding/vixen/pref/firefox-branding.js`).
+- The health report and Normandy are no longer built (`browser/moz.configure`).
 
 The icons in `browser/branding/vixen` are still the generic unofficial-build placeholders and
 need to be replaced with Vixen artwork.
