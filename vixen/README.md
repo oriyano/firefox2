@@ -58,5 +58,5 @@ The installer is not code-signed yet, so Windows SmartScreen will warn when it r
   certificate revocation) stays on for security.
 - The health report and Normandy are no longer built (`browser/moz.configure`).
 
-The icons in `browser/branding/vixen` are still the generic unofficial-build placeholders and
-need to be replaced with Vixen artwork.
+The Vixen logo is generated into `browser/branding/vixen` (app icons, Windows tiles, installer
+art, New Tab and About logo). The private-browsing and macOS icons are still placeholders.
