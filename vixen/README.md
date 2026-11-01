@@ -53,7 +53,8 @@ The installer is not code-signed yet, so Windows SmartScreen will warn when it r
   Nimbus), extension and feature recommendations, and the New Tab stories feed, sponsored
   tiles and New Tab analytics (`browser/branding/vixen/pref/firefox-branding.js`).
 - Also off and locked: Firefox Suggest, the New Tab weather widget, region lookup, Web Push,
-  OpenH264 codec downloads, local AI models and Firefox Labs. Remote Settings (blocklists and
+  OpenH264 codec downloads, system add-on updates, add-on metadata lookups, captive portal and
+  connectivity checks, local AI models and Firefox Labs. Remote Settings (blocklists and
   certificate revocation) stays on for security.
 - The health report and Normandy are no longer built (`browser/moz.configure`).
 
