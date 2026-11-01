@@ -34,7 +34,8 @@ The first build takes about 1 to 2 hours; later builds only recompile what chang
 For a hardened, optimized build use `vixen/mozconfig.win64-release` instead. It is much slower
 because of link-time optimization.
 
-To make an installer: `./mach package`, then look in `obj-vixen-*/dist/install/sea/`.
+To make a portable zip: `./mach package` (output in `obj-vixen-*/dist/`).
+To make a setup .exe: `./mach build installer` (output in `obj-vixen-*/dist/install/sea/`).
 
 ## What the build settings change
 
