@@ -35,7 +35,13 @@ For a hardened, optimized build use `vixen/mozconfig.win64-release` instead. It 
 because of link-time optimization.
 
 To make a portable zip: `./mach package` (output in `obj-vixen-*/dist/`).
-To make a setup .exe: `./mach build installer` (output in `obj-vixen-*/dist/install/sea/`).
+To make a setup .exe from that zip (output in `obj-vixen-*/dist/`):
+
+```
+ZIP_IN=$PWD/obj-vixen-dev/dist/vixen-<version>.en-US.win64.zip ./mach build -C browser/installer/windows installer
+```
+
+The installer is not code-signed yet, so Windows SmartScreen will warn when it runs.
 
 ## What the build settings change
 
