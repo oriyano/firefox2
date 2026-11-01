@@ -72,3 +72,19 @@ pref("browser.newtabpage.activity-stream.unifiedAds.adsFeed.enabled", false, loc
 pref("browser.newtabpage.activity-stream.unifiedAds.spocs.enabled", false, locked);
 pref("browser.newtabpage.activity-stream.unifiedAds.tiles.enabled", false, locked);
 pref("browser.newtabpage.activity-stream.discoverystream.endpoints", "data:,", locked);
+
+// Vixen: no Firefox Suggest, weather, region lookup, push, AI models or Labs.
+pref("browser.urlbar.quicksuggest.enabled", false, locked);
+pref("browser.urlbar.suggest.quicksuggest.all", false, locked);
+pref("browser.urlbar.suggest.quicksuggest.sponsored", false, locked);
+pref("browser.urlbar.suggest.quicksuggest.nonsponsored", false, locked);
+pref("browser.newtabpage.activity-stream.showWeather", false, locked);
+pref("browser.newtabpage.activity-stream.system.showWeather", false, locked);
+pref("browser.newtabpage.activity-stream.feeds.weatherfeed", false, locked);
+pref("browser.region.network.url", "", locked);
+pref("browser.region.update.enabled", false, locked);
+pref("dom.push.connection.enabled", false, locked);
+pref("media.gmp-manager.url", "data:,", locked);
+pref("media.gmp-gmpopenh264.enabled", false, locked);
+pref("browser.ml.enable", false, locked);
+pref("browser.preferences.experimental.hidden", true, locked);

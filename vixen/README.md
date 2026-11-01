@@ -52,6 +52,9 @@ The installer is not code-signed yet, so Windows SmartScreen will warn when it r
 - Off and locked: all telemetry, Glean and usage uploads, studies and experiments (Normandy,
   Nimbus), extension and feature recommendations, and the New Tab stories feed, sponsored
   tiles and New Tab analytics (`browser/branding/vixen/pref/firefox-branding.js`).
+- Also off and locked: Firefox Suggest, the New Tab weather widget, region lookup, Web Push,
+  OpenH264 codec downloads, local AI models and Firefox Labs. Remote Settings (blocklists and
+  certificate revocation) stays on for security.
 - The health report and Normandy are no longer built (`browser/moz.configure`).
 
 The icons in `browser/branding/vixen` are still the generic unofficial-build placeholders and
