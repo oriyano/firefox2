@@ -16,7 +16,7 @@ ac_add_options --disable-eme
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/obj-vixen-dev
 
 # Google Safe Browsing key for phishing and malware warnings. Keep it out of the repository.
-VIXEN_SB_KEY="$HOME/.vixen-keys/google-safebrowsing.key"
+VIXEN_SB_KEY="$(cygpath -m "$HOME" 2>/dev/null || echo "$HOME")/.vixen-keys/google-safebrowsing.key"
 if [ -f "$VIXEN_SB_KEY" ]; then
   ac_add_options --with-google-safebrowsing-api-keyfile="$VIXEN_SB_KEY"
 fi
