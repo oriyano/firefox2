@@ -12,11 +12,9 @@ browser.jar:
    content/browser/preferences/search.js
    content/browser/preferences/privacy.js
    content/browser/preferences/sync.js
-   content/browser/preferences/moreFromMozilla.js
    content/browser/preferences/fxaPairDevice.xhtml
    content/browser/preferences/fxaPairDevice.js
    content/browser/preferences/findInPage.js
-   content/browser/preferences/more-from-mozilla-qr-code-simple.svg
    content/browser/preferences/browser-layout-horizontal.svg
    content/browser/preferences/browser-layout-vertical.svg
    content/browser/preferences/web-appearance-dark.svg
@@ -37,7 +35,6 @@ browser.jar:
    content/browser/preferences/config/browser-icon.mjs                  (config/browser-icon.mjs)
    content/browser/preferences/config/aiFeatures.mjs                    (config/aiFeatures.mjs)
    content/browser/preferences/config/firefoxLabs.mjs                   (config/firefoxLabs.mjs)
-   content/browser/preferences/config/moreFromMozilla.mjs               (config/moreFromMozilla.mjs)
    content/browser/preferences/config/default-browser.mjs               (config/default-browser.mjs)
    content/browser/preferences/config/downloads.mjs                     (config/downloads.mjs)
    content/browser/preferences/config/passwords-autofill.mjs            (config/passwords-autofill.mjs)

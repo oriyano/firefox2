@@ -44,7 +44,6 @@
   <link rel="localization" href="browser/browser.ftl"/>
     <!-- Used by fontbuilder.js -->
   <link rel="localization" href="browser/preferences/fonts.ftl"/>
-  <link rel="localization" href="browser/preferences/moreFromMozilla.ftl"/>
   <link rel="localization" href="browser/preferences/preferences.ftl"/>
   <link rel="localization" href="browser/preferences/vixen.ftl"/>
   <link rel="localization" href="toolkit/branding/brandings.ftl"/>
@@ -197,12 +196,6 @@
         iconsrc="chrome://browser/skin/sidebar/firefox.svg"
         data-l10n-id="pane-about-firefox-title">
       </html:moz-page-nav-button>
-      <html:moz-page-nav-button id="category-more-from-mozilla"
-        hidden="true"
-        view="paneMoreFromMozilla"
-        iconsrc="chrome://browser/skin/preferences/mozilla-16.svg"
-        data-l10n-id="more-from-moz-title2">
-      </html:moz-page-nav-button>
 
       <!-- Hidden sub-page entries (CSS display:none via .hidden-category).
            These keep gotoPref() routing working for sub-pages that are
@@ -259,7 +252,6 @@
 #include search.inc.xhtml
 #include privacy.inc.xhtml
 #include sync.inc.xhtml
-#include moreFromMozilla.inc.xhtml
         </vbox>
       </vbox>
     </vbox>

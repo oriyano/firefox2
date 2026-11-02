@@ -1540,7 +1540,6 @@ pref("accessibility.typeaheadfind.flashBar", 1);
 // Whether we had to hide the "Firefox Labs" section because it would be empty.
 pref("browser.preferences.experimental.hidden", false);
 // Whether we show the "More from Mozilla" section.
-pref("browser.preferences.moreFromMozilla", true);
 // Whether we show the "AI Controls" pane.
 pref("browser.preferences.aiControls", true);
 // Whether to show unavailable AI controls regardless of region/locale
