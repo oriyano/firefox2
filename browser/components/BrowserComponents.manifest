@@ -14,6 +14,7 @@ category first-startup-new-profile resource:///modules/AboutNewTabResourceMappin
 # Browser global components initializing before UI startup
 category browser-before-ui-startup moz-src:///browser/components/sessionstore/SessionStore.sys.mjs SessionStore.init
 category browser-before-ui-startup resource:///modules/BuiltInThemes.sys.mjs BuiltInThemes.maybeInstallActiveBuiltInTheme
+category browser-before-ui-startup resource:///modules/VixenShield.sys.mjs VixenShield.init
 #ifdef MOZ_NORMANDY
 category browser-before-ui-startup resource://normandy/Normandy.sys.mjs Normandy.init
 #endif

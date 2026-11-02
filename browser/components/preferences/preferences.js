@@ -445,6 +445,7 @@ const CONFIG_PANES = Object.freeze({
     l10nId: "pane-privacy-section",
     iconSrc: "chrome://browser/skin/preferences/category-privacy-security.svg",
     groupIds: [
+      "vixenShield",
       "securityPrivacyStatus",
       "securityPrivacyWarnings",
       "etpStatus",
@@ -665,6 +666,10 @@ function init_all() {
 
   ChromeUtils.importESModule(
     "chrome://browser/content/preferences/config/settings-lock.mjs",
+    { global: "current" }
+  );
+  ChromeUtils.importESModule(
+    "chrome://browser/content/preferences/config/vixen-shield.mjs",
     { global: "current" }
   );
   gSearchResultsPane.init();

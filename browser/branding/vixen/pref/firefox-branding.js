@@ -95,3 +95,7 @@ pref("extensions.systemAddon.update.url", "", locked);
 pref("extensions.getAddons.cache.enabled", false, locked);
 pref("network.captive-portal-service.enabled", false, locked);
 pref("network.connectivity-service.enabled", false, locked);
+
+// Vixen: extensions must be signed; Vixen Shield is off until the user turns it on.
+pref("xpinstall.signatures.required", true);
+pref("vixen.shield.enabled", false);

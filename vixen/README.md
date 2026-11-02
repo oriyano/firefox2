@@ -69,3 +69,11 @@ shows a Windows administrator prompt and writes or removes the `SettingsLock` po
 is on, every settings control is disabled, `about:config` is blocked, and extensions can't be
 installed. An administrator can also set the same registry value directly, for example via
 Group Policy. Editing `prefs.js` or `user.js` in the profile folder is not blocked yet.
+
+## Vixen Shield
+
+A switch at the top of Privacy & Security (`vixen.shield.enabled`). When on, `VixenShield.sys.mjs`
+changes the default values of a set of hardening prefs: HTTPS-Only mode, strict certificate
+pinning and OCSP, mixed-content blocking, no JavaScript/WebAssembly JIT, punycode for
+look-alike domains, blocked notification requests, WebRTC IP protection, trimmed cross-site
+referrers and no PDF scripting. Settings the user changed explicitly keep their value.
