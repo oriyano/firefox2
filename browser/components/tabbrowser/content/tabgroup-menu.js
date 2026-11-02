@@ -24,13 +24,6 @@
       "moz-src:///browser/components/aiwindow/ui/modules/AIWindowMenu.sys.mjs",
   });
 
-  ChromeUtils.importESModule(
-    "chrome://browser/content/genai/content/model-optin.mjs",
-    {
-      global: "current",
-    }
-  );
-
   class MozTabbrowserTabGroupMenu extends MozXULElement {
     static COLORS = [
       "blue",
@@ -557,14 +550,9 @@
       Glean.tabgroup.smartTabEnabled.set(this.smartTabGroupsPrefEnabled);
     }
 
+    // Vixen ships without AI tab grouping.
     get smartTabGroupsEnabled() {
-      return (
-        Services.locale.appLocaleAsBCP47.startsWith("en") &&
-        this.smartTabGroupsUserEnabled &&
-        this.smartTabGroupsFeatureConfigEnabled &&
-        !PrivateBrowsingUtils.isWindowPrivate(this.documentGlobal) &&
-        this.mlEnabled
-      );
+      return false;
     }
 
     get smartTabGroupsPrefEnabled() {
