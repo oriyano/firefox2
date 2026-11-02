@@ -43,7 +43,7 @@ policy-BlockAboutProfiles2 = Block access to About Profiles (about:profiles).
 
 policy-BlockAboutSupport2 = Block access to Troubleshooting Information (about:support).
 
-policy-Bookmarks = Create bookmarks in the Bookmarks toolbar, Bookmarks menu, or a specified folder inside them.
+policy-Bookmarks = Create favorites in the Favorites toolbar, Favorites menu, or a specified folder inside them.
 
 policy-CaptivePortal = Enable or disable captive portal support.
 
@@ -127,7 +127,7 @@ policy-DisableTelemetry = Turn off Telemetry.
 
 policy-DisableThirdPartyModuleBlocking2 = Prevent the user from using Third-party Module Information (about:third-party) to block third-party modules injected into the { -brand-short-name } process.
 
-policy-DisplayBookmarksToolbar = Display the Bookmarks Toolbar by default.
+policy-DisplayBookmarksToolbar = Display the Favorites Toolbar by default.
 
 policy-DisplayMenuBar = Display the Menu Bar by default.
 
@@ -191,7 +191,7 @@ policy-LocalFileLinks = Allow specific websites to link to local files.
 
 policy-LocalNetworkAccess = Enable or disable local network access checks.
 
-policy-ManagedBookmarks = Configures a list of bookmarks managed by an administrator that cannot be changed by the user.
+policy-ManagedBookmarks = Configures a list of favorites managed by an administrator that cannot be changed by the user.
 
 policy-ManualAppUpdateOnly = Allow manual updates only and do not notify the user about updates.
 
@@ -203,7 +203,7 @@ policy-NetworkPrediction = Enable or disable network prediction (DNS prefetching
 
 policy-NewTabPage = Enable or disable the New Tab page.
 
-policy-NoDefaultBookmarks = Disable creation of the default bookmarks bundled with { -brand-short-name }, and the Smart Bookmarks (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.
+policy-NoDefaultBookmarks = Disable creation of the default favorites bundled with { -brand-short-name }, and the Smart Favorites (Most Visited, Recent Tags). Note: this policy is only effective if used before the first run of the profile.
 
 policy-OfferToSaveLogins = Enforce the setting to allow { -brand-short-name } to offer to remember saved logins and passwords. Both true and false values are accepted.
 

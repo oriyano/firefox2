@@ -168,7 +168,7 @@ firefoxview-search-text-box-history =
 
 # Placeholder for the input field to search in bookmarks ("search" is a verb).
 firefoxview-search-text-box-bookmarks =
-  .placeholder = Search bookmarks
+  .placeholder = Search favorites
 
 # Placeholder for the input field to search in recently closed tabs ("search" is a verb).
 firefoxview-search-text-box-recentlyclosed =
@@ -257,7 +257,7 @@ firefoxview-import-history-close-button =
 ## Text displayed in a dismissable banner to import bookmarks/history from another browser
 
 firefoxview-import-history-header = Import history from another browser
-firefoxview-import-history-description = Make { -brand-short-name } your go-to browser. Import browsing history, bookmarks, and more.
+firefoxview-import-history-description = Make { -brand-short-name } your go-to browser. Import browsing history, favorites, and more.
 
 ## Message displayed in Firefox View when the user has no recently closed tabs data
 
@@ -286,7 +286,7 @@ firefoxview-opentabs-pinned-tab =
 
 # This tooltip will be shown for a pinned tab whose URL is currently bookmarked.
 firefoxview-opentabs-bookmarked-pinned-tab =
-  .title = Switch to (Bookmarked) { $tabTitle }
+  .title = Switch to (Favorited) { $tabTitle }
 
 ## These tooltips will be displayed when hovering over an unpinned Open Tab
 ## Variables:
@@ -294,4 +294,4 @@ firefoxview-opentabs-bookmarked-pinned-tab =
 
 # This tooltip will be shown for an unpinned tab whose URL is currently bookmarked.
 firefoxview-opentabs-bookmarked-tab =
-  .title = (Bookmarked) { $url }
+  .title = (Favorited) { $url }

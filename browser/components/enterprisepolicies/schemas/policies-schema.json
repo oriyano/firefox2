@@ -4010,6 +4010,15 @@
       }
     },
 
+    "SettingsLock": {
+      "type": "boolean",
+      "x-category": "Security",
+      "x-compatibility": {},
+      "x-restart-required": true,
+      "description": "Vixen only. Prevent browser settings from being changed until a Windows administrator turns the lock off.",
+      "examples": [true]
+    },
+
     "ShowHomeButton": {
       "type": "boolean",
       "x-category": "Startup",

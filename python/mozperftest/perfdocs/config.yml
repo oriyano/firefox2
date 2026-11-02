@@ -42,11 +42,6 @@ suites:
         tests:
             Dom-size: ""
 
-    browser/components/genai/tests/browser:
-        description: "Performance tests for GenAI features on Firefox Desktop"
-        tests:
-            "browser_link_preview_perf.js": ""
-
     toolkit/components/pdfjs/test:
         description: "Performance tests for PDF.js features on Firefox Desktop"
         tests:
@@ -57,11 +52,6 @@ suites:
         tests:
             "browser_urlbar_semantic_history_perf.js": ""
             "browser_quicksuggest_ml_perf.js": ""
-
-    browser/components/tabbrowser/test/browser/smarttabgrouping/performance:
-        description: "End-to-end performance tests for Smart Tab Grouping"
-        tests:
-            "browser_smart_tab_grouping_perf.js": ""
 
     browser/components/translations/tests/browser:
         description: "Performance tests for Translations models on Firefox Desktop"
@@ -87,20 +77,6 @@ suites:
         description: "Performance tests for on-device speech recognition"
         tests:
             "browser_speech_recognition_perf.js": ""
-
-    toolkit/components/ml/tests/browser:
-        description: "Performance tests running through Mochitest for ML Models"
-        tests:
-            "browser_ml_engine_perf.js": ""
-            "browser_ml_engine_multi_perf.js": ""
-            "ML Semantic History Search": ""
-            "browser_ml_suggest_feature_perf.js": ""
-            "browser_ml_suggest_inference.js": ""
-            "browser_ml_autofill_perf.js": ""
-            "ML Smart Tab Clustering": ""
-            "browser_ml_smart_tab_perf.js": ""
-            "browser_ml_llama_smollm2_smoke.js": ""
-            "browser_ml_llama_summarizer_perf.js": ""
 
     intl/benchmarks/test/xpcshell:
         description: "Performance tests running through XPCShell for Intl code"
@@ -137,9 +113,3 @@ suites:
         description: "Performance tests for Toolkit: Places"
         tests:
             "Calculate Frecency Speed": ""
-
-    browser/components/aiwindow/ui/test/browser_perf:
-        description: "Performance tests for Smart Window on Firefox Desktop"
-        tests:
-            "browser_smartwindow_intent_perf.js": ""
-            "browser_smartwindow_perf.js": ""

@@ -20,7 +20,7 @@ bookmark-overlay-choose =
   .label = Choose…
 
 bookmark-overlay-folders-expander2 =
-  .tooltiptext = Show all the bookmarks folders
+  .tooltiptext = Show all the favorites folders
 
 bookmark-overlay-folders-expander-hide =
   .tooltiptext = Hide
@@ -50,9 +50,9 @@ bookmark-overlay-keyword-2 =
   .value = Keyword
   .accesskey = K
 
-bookmark-overlay-tags-caption-label = Use tags to organize and search for bookmarks from the address bar
+bookmark-overlay-tags-caption-label = Use tags to organize and search for favorites from the address bar
 
-bookmark-overlay-keyword-caption-label-2 = Use a single keyword to open bookmarks directly from the address bar
+bookmark-overlay-keyword-caption-label-2 = Use a single keyword to open favorites directly from the address bar
 
 ## Bookmark properties dialog
 
@@ -61,16 +61,16 @@ bookmark-properties-save-button =
 
 ## Titles of the dialog used to add or edit bookmarks and folders.
 
-bookmark-properties-title-add-bookmark = Add bookmark
+bookmark-properties-title-add-bookmark = Add favorite
 # Title used when bookmarking multiple tabs at once into a new folder.
-bookmark-properties-title-add-multiple-bookmarks = New Bookmarks
-bookmark-properties-title-add-folder = Add bookmark folder
-bookmark-properties-title-edit-bookmark = Edit bookmark
-bookmark-properties-title-edit-folder = Edit bookmark folder
+bookmark-properties-title-add-multiple-bookmarks = New Favorites
+bookmark-properties-title-add-folder = Add favorite folder
+bookmark-properties-title-edit-bookmark = Edit favorite
+bookmark-properties-title-edit-folder = Edit favorite folder
 
 ## Default names for newly created bookmarks and folders.
 
 # Default name of the folder created when bookmarking all tabs.
 bookmark-properties-default-name-all-tabs-folder = [Folder Name]
 bookmark-properties-default-name-folder = New Folder
-bookmark-properties-default-name-bookmark = New Bookmark
+bookmark-properties-default-name-bookmark = New Favorite

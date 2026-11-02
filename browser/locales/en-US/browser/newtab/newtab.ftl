@@ -163,9 +163,9 @@ newtab-menu-report-this-ad = Report this ad
 ##
 
 # Bookmark is a noun in this case, "Remove bookmark".
-newtab-menu-remove-bookmark = Remove Bookmark
+newtab-menu-remove-bookmark = Remove Favorite
 # Bookmark is a verb here.
-newtab-menu-bookmark = Bookmark
+newtab-menu-bookmark = Favorite
 
 ## Context Menu - Downloaded Menu. "Download" in these cases is not a verb,
 ## it is a noun. As in, "Copy the link that belongs to this downloaded item".
@@ -190,8 +190,8 @@ newtab-menu-open-file = Open File
 ## the page is bookmarked, or is currently open on another device.
 
 newtab-label-visited = Visited
-newtab-label-bookmarked = Bookmarked
-newtab-label-removed-bookmark = Bookmark removed
+newtab-label-bookmarked = Favorited
+newtab-label-removed-bookmark = Favorite removed
 newtab-label-recommended = Trending
 newtab-label-saved = Saved to { -pocket-brand-name }
 newtab-label-download = Downloaded
@@ -230,7 +230,7 @@ newtab-section-header-todays-picks = Today’s picks for you
 
 ## Empty Section States: These show when there are no more items in a section. Ex. When there are no more Pocket story recommendations, in the space where there would have been stories, this is shown instead.
 
-newtab-empty-section-highlights = Start browsing, and we’ll show some of the great articles, videos, and other pages you’ve recently visited or bookmarked here.
+newtab-empty-section-highlights = Start browsing, and we’ll show some of the great articles, videos, and other pages you’ve recently visited or favorited here.
 
 # Ex. When there are no more story recommendations, in the space where there would have been stories, this is shown instead.
 newtab-empty-section-topstories-generic = You’ve caught up. Check back later for more stories. Can’t wait? Select a popular topic to find more great stories from around the web.
@@ -1321,7 +1321,7 @@ home-prefs-highlights-option-visited-pages-srd =
     .label = Visited pages
 
 home-prefs-highlights-options-bookmarks-srd =
-    .label = Bookmarks
+    .label = Favorites
 
 home-prefs-highlights-option-most-recent-download-srd =
     .label = Most recent download
@@ -1440,7 +1440,7 @@ newtab-privacy-message-promo-monitor-1 = Find out if your personal info shows up
 newtab-privacy-message-promo-monitor-1-cta = Learn more
 newtab-privacy-message-promo-monitor-2 = Protect your info with free data breach monitoring, for up to 20 emails.
 newtab-privacy-message-promo-monitor-2-cta = Learn more
-newtab-privacy-message-promo-signin-1 = Keep bookmarks, passwords, and tabs encrypted across devices with your { -vendor-short-name } account.
+newtab-privacy-message-promo-signin-1 = Keep favorites, passwords, and tabs encrypted across devices with your { -vendor-short-name } account.
 newtab-privacy-message-promo-signin-1-cta = Sign in
 newtab-privacy-message-promo-vpn-1 = Shopping on public Wi-Fi? Turn on built-in VPN for extra protection.
 newtab-privacy-message-promo-vpn-1-cta = Open VPN

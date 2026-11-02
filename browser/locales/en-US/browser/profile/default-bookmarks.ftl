@@ -6,8 +6,8 @@
 # This approach minimizes issues across multiple release channels and rebranded
 # versions.
 
-default-bookmarks-title = Bookmarks
-default-bookmarks-heading = Bookmarks
+default-bookmarks-title = Favorites
+default-bookmarks-heading = Favorites
 
 # Firefox links folder name
 default-bookmarks-firefox-heading = Mozilla Firefox

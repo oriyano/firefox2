@@ -2,11 +2,20 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-with Files("**"):
-    BUG_COMPONENT = ("Core", "Machine Learning: General")
+# Vixen ships without Smart Window. These inert modules keep the paths that
+# other browser code imports, so that code sees the feature as unavailable.
 
-DIRS += [
-    "models",
-    "services",
-    "ui",
+with Files("**"):
+    BUG_COMPONENT = ("Firefox", "General")
+
+MOZ_SRC_FILES += [
+    "models/AuthProvider.sys.mjs",
+    "ui/modules/AgentPageDetector.sys.mjs",
+    "ui/modules/AIWindow.sys.mjs",
+    "ui/modules/AIWindowMenu.sys.mjs",
+    "ui/modules/AIWindowUI.sys.mjs",
+    "ui/modules/AutoTabGroupingSuggestions.sys.mjs",
+    "ui/modules/ChatStore.sys.mjs",
+    "ui/modules/ChatUtils.sys.mjs",
+    "ui/modules/SmartFormFillAutocomplete.sys.mjs",
 ]

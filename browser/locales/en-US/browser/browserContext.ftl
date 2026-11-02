@@ -96,38 +96,38 @@ main-context-menu-page-save =
 ## Simple menu items
 
 main-context-menu-bookmark-page-2 =
-    .aria-label = Bookmark Page…
-    .tooltiptext = Bookmark page
+    .aria-label = Favorite Page…
+    .tooltiptext = Favorite page
 
 # This menuitem is only visible on macOS
 # Cannot be shown at the same time as main-context-menu-edit-bookmark-mac,
 # so should probably have the same access key if possible.
 main-context-menu-bookmark-page-mac =
-    .label = Bookmark Page…
-    .accesskey = m
+    .label = Favorite Page…
+    .accesskey = a
 
 # This menuitem is only visible on macOS
 # Cannot be shown at the same time as main-context-menu-bookmark-page-mac,
 # so should probably have the same access key if possible.
 main-context-menu-edit-bookmark-mac =
-    .label = Edit Bookmark…
-    .accesskey = m
+    .label = Edit Favorite…
+    .accesskey = a
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 main-context-menu-bookmark-page-with-shortcut-2 =
-    .aria-label = Bookmark Page…
-    .tooltiptext = Bookmark page ({ $shortcut })
+    .aria-label = Favorite Page…
+    .tooltiptext = Favorite page ({ $shortcut })
 
 main-context-menu-edit-bookmark-2 =
-    .aria-label = Edit Bookmark…
-    .tooltiptext = Edit bookmark
+    .aria-label = Edit Favorite…
+    .tooltiptext = Edit favorite
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 main-context-menu-edit-bookmark-with-shortcut-2 =
-    .aria-label = Edit Bookmark…
-    .tooltiptext = Edit bookmark ({ $shortcut })
+    .aria-label = Edit Favorite…
+    .tooltiptext = Edit favorite ({ $shortcut })
 
 main-context-menu-open-link =
     .label = Open Link
@@ -154,8 +154,8 @@ main-context-menu-open-link-new-private-window =
     .accesskey = P
 
 main-context-menu-bookmark-link-2 =
-    .label = Bookmark Link…
-    .accesskey = B
+    .label = Favorite Link…
+    .accesskey = a
 
 main-context-menu-save-link =
     .label = Save Link As…
@@ -422,7 +422,7 @@ main-context-menu-frame-reload =
     .accesskey = R
 
 main-context-menu-frame-add-bookmark =
-    .label = Bookmark Frame…
+    .label = Favorite Frame…
     .accesskey = m
 
 main-context-menu-frame-save-as =

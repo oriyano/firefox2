@@ -149,7 +149,7 @@ urlbar-tabtosearch-onboard = Select this shortcut to find what you need faster.
 
 ## Local search mode indicator labels in the urlbar
 
-urlbar-search-mode-bookmarks = Bookmarks
+urlbar-search-mode-bookmarks = Favorites
 urlbar-search-mode-tabs = Tabs
 urlbar-search-mode-history = History
 urlbar-search-mode-actions = Actions
@@ -190,12 +190,12 @@ urlbar-install-blocked =
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the edit bookmark command.
 urlbar-star-edit-bookmark =
-    .tooltiptext = Edit this bookmark ({ $shortcut })
+    .tooltiptext = Edit this favorite ({ $shortcut })
 
 # Variables
 #   $shortcut (String) - A keyboard shortcut for the add bookmark command.
 urlbar-star-add-bookmark =
-    .tooltiptext = Bookmark this page ({ $shortcut })
+    .tooltiptext = Favorite this page ({ $shortcut })
 
 urlbar-split-view-button =
     .tooltiptext = Split view
@@ -281,7 +281,7 @@ search-one-offs-add-engine-menu =
 ##    bookmarks).
 
 search-one-offs-bookmarks =
-    .tooltiptext = Bookmarks ({ $restrict })
+    .tooltiptext = Favorites ({ $restrict })
 search-one-offs-tabs =
     .tooltiptext = Tabs ({ $restrict })
 search-one-offs-history =
@@ -305,8 +305,8 @@ quickactions-manageai = Manage AI controls
 quickactions-cmd-manageai = disable ai, off ai, manage ai
 
 # Opens the bookmarks library window
-quickactions-bookmarks2 = Manage bookmarks
-quickactions-cmd-bookmarks = bookmarks
+quickactions-bookmarks2 = Manage favorites
+quickactions-cmd-bookmarks = favorites
 
 # Opens a SUMO article explaining how to clear history
 quickactions-clearrecenthistory = Clear recent history
@@ -421,8 +421,8 @@ press-tab-label = Press tab to select:
 
 ## Bookmark Panel
 
-bookmarks-add-bookmark = Add bookmark
-bookmarks-edit-bookmark = Edit bookmark
+bookmarks-add-bookmark = Add favorite
+bookmarks-edit-bookmark = Edit favorite
 bookmark-panel-cancel =
     .label = Cancel
     .accesskey = C
@@ -431,8 +431,8 @@ bookmark-panel-cancel =
 bookmark-panel-remove =
     .label =
         { $count ->
-            [1] Remove bookmark
-           *[other] Remove { $count } bookmarks
+            [1] Remove favorite
+           *[other] Remove { $count } favorites
         }
     .accesskey = R
 bookmark-panel-show-editor-checkbox =
@@ -531,10 +531,10 @@ browser-window-return-to-opener =
 ## Bookmarks toolbar items
 
 browser-import-button2 =
-    .label = Import bookmarks…
-    .tooltiptext = Import bookmarks from another browser to { -brand-short-name }.
+    .label = Import favorites…
+    .tooltiptext = Import favorites from another browser to { -brand-short-name }.
 
-bookmarks-toolbar-empty-message = For quick access, place your bookmarks here on the bookmarks toolbar. <a data-l10n-name="manage-bookmarks">Manage bookmarks…</a>
+bookmarks-toolbar-empty-message = For quick access, place your favorites here on the favorites toolbar. <a data-l10n-name="manage-bookmarks">Manage favorites…</a>
 
 ## WebRTC Pop-up notifications
 
@@ -606,7 +606,7 @@ urlbar-placeholder-search-mode-other-engine =
 # This placeholder is used when searching bookmarks.
 urlbar-placeholder-search-mode-other-bookmarks =
   .placeholder = Enter search terms
-  .aria-label = Search bookmarks
+  .aria-label = Search favorites
 
 # This placeholder is used when searching history.
 urlbar-placeholder-search-mode-other-history =
@@ -733,7 +733,7 @@ urlbar-result-explanation-last-visited-absolute-2 = Last visited { $date }
 # formatted as an absolute date like: "11 May", "11 May 2026"
 # Variables:
 #   $date (string) - A localized absolute date string
-urlbar-result-explanation-bookmarked = Bookmarked { $date }
+urlbar-result-explanation-bookmarked = Favorited { $date }
 
 # The sub title of an add-on suggestion in the urlbar.
 urlbar-result-addons-subtitle = { -brand-product-name } extension
@@ -885,7 +885,7 @@ urlbar-searchmode-no-keyword2 =
 
 urlbar-searchmode-dropmarker2 =
     .title = Pick a search engine
-urlbar-searchmode-bookmarks4 = Bookmarks
+urlbar-searchmode-bookmarks4 = Favorites
 urlbar-searchmode-tabs4 = Tabs
 urlbar-searchmode-history4 = History
 urlbar-searchmode-actions4 = Actions
@@ -928,7 +928,7 @@ urlbar-result-search-with-engine-keywords = {$keywords} - Search with { $engine 
 ## string or the url, like "result value - action text".
 ## In these actions "Search" is a verb, followed by where the search is performed.
 
-urlbar-result-action-search-bookmarks = Search Bookmarks
+urlbar-result-action-search-bookmarks = Search Favorites
 urlbar-result-action-search-history = Search History
 urlbar-result-action-search-tabs = Search Tabs
 urlbar-result-action-search-actions = Search Actions
@@ -1047,18 +1047,18 @@ pointerlock-warning-no-domain = This document has control of your pointer. Press
 ## Bookmarks panels, menus and toolbar
 
 bookmarks-manage-bookmarks =
-  .label = Manage bookmarks
-bookmarks-recent-bookmarks-panel-subheader = Recent bookmarks
+  .label = Manage favorites
+bookmarks-recent-bookmarks-panel-subheader = Recent favorites
 bookmarks-toolbar-chevron =
-  .tooltiptext = Show more bookmarks
+  .tooltiptext = Show more favorites
 bookmarks-sidebar-content =
-  .aria-label = Bookmarks
+  .aria-label = Favorites
 bookmarks-menu-button =
-  .label = Bookmarks menu
+  .label = Favorites menu
 bookmarks-other-bookmarks-menu =
-  .label = Other bookmarks
+  .label = Other favorites
 bookmarks-mobile-bookmarks-menu =
-  .label = Mobile bookmarks
+  .label = Mobile favorites
 
 ## Variables:
 ##   $isVisible (boolean): if the specific element (e.g. bookmarks sidebar,
@@ -1066,51 +1066,51 @@ bookmarks-mobile-bookmarks-menu =
 
 bookmarks-tools-sidebar-visibility =
   .label = { $isVisible ->
-     [true] Hide bookmarks sidebar
-    *[other] View bookmarks sidebar
+     [true] Hide favorites sidebar
+    *[other] View favorites sidebar
   }
 bookmarks-tools-toolbar-visibility-menuitem =
   .label = { $isVisible ->
-     [true] Hide Bookmarks Toolbar
-    *[other] View Bookmarks Toolbar
+     [true] Hide Favorites Toolbar
+    *[other] View Favorites Toolbar
   }
 bookmarks-tools-toolbar-visibility-panel =
   .label = { $isVisible ->
-     [true] Hide bookmarks toolbar
-    *[other] Show bookmarks toolbar
+     [true] Hide favorites toolbar
+    *[other] Show favorites toolbar
   }
 
 ##
 
 bookmarks-search =
-  .label = Search bookmarks
+  .label = Search favorites
 bookmarks-tools =
-  .label = Bookmarking Tools
+  .label = Favoriting Tools
 bookmarks-subview-edit-bookmark =
-  .label = Edit this bookmark…
+  .label = Edit this favorite…
 
 # The aria-label is a spoken label that should not include the word "toolbar" or
 # such, because screen readers already know that this container is a toolbar.
 # This avoids double-speaking.
 bookmarks-toolbar =
-  .toolbarname = Bookmarks Toolbar
+  .toolbarname = Favorites Toolbar
   .accesskey = B
-  .aria-label = Bookmarks
+  .aria-label = Favorites
 bookmarks-toolbar-menu =
-  .label = Bookmarks toolbar
+  .label = Favorites toolbar
 bookmarks-toolbar-placeholder =
-  .title = Bookmarks toolbar items
+  .title = Favorites toolbar items
 bookmarks-toolbar-placeholder-button =
-  .label = Bookmarks toolbar items
+  .label = Favorites toolbar items
 
 # "Bookmark" is a verb, as in "Add current tab to bookmarks".
 bookmarks-subview-bookmark-tab =
-  .label = Bookmark current tab…
+  .label = Favorite current tab…
 
 ## Library Panel items
 
 library-bookmarks-menu =
-  .label = Bookmarks
+  .label = Favorites
 
 ## Repair text encoding toolbar button
 
@@ -1395,7 +1395,7 @@ navbar-home =
 
 navbar-library =
     .label = Library
-    .tooltiptext = View history, saved bookmarks, and more
+    .tooltiptext = View history, saved favorites, and more
 
 navbar-search =
     .title = Search

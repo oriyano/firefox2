@@ -12,7 +12,7 @@ fullscreen = Fullscreen
 touchbar-fullscreen-exit = Exit Fullscreen
 find = Find
 new-tab = New tab
-add-bookmark = Add bookmark
+add-bookmark = Add favorite
 reader-view = Reader View
 # Meant to match the string displayed in an empty URL bar.
 open-location = Search or enter address
@@ -28,7 +28,7 @@ search-search-in = Search in:
 
 ## Various categories of shortcuts for search.
 
-search-bookmarks = Bookmarks
+search-bookmarks = Favorites
 search-history = History
 search-opentabs = Open Tabs
 search-tags = Tags

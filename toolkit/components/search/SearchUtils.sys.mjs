@@ -22,6 +22,10 @@ const lazy = XPCOMUtils.declareLazy({
     pref: "browser.search.configV3.featureGate",
     default: false,
   },
+  engineAllowlistPref: {
+    pref: "browser.search.engineAllowlist",
+    default: "",
+  },
 });
 
 const BinaryInputStream = Components.Constructor(
@@ -171,6 +175,32 @@ export var SearchUtils = {
    */
   get configV3FeatureGate() {
     return lazy.configV3FeatureGate;
+  },
+
+  /**
+   * Identifiers of the configuration engines allowed in this build. When the
+   * list is not empty, other configuration engines are filtered out and no
+   * other engines can be added.
+   *
+   * @returns {string[]}
+   */
+  get engineAllowlist() {
+    return lazy.engineAllowlistPref
+      .split(",")
+      .map(id => id.trim())
+      .filter(Boolean);
+  },
+
+  /**
+   * Whether users and sites may add search engines.
+   *
+   * @returns {boolean}
+   */
+  get canInstallEngines() {
+    return (
+      Services.policies.isAllowed("installSearchEngine") &&
+      !this.engineAllowlist.length
+    );
   },
 
   /**

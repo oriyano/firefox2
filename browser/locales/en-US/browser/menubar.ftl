@@ -151,7 +151,7 @@ menu-view-sidebar =
     .label = Sidebar
     .accesskey = e
 menu-view-bookmarks =
-    .label = Bookmarks
+    .label = Favorites
 menu-view-history-button =
     .label = History
 menu-view-synced-tabs-sidebar =
@@ -246,27 +246,27 @@ menu-history-search-tabs =
 ## Bookmarks Menu
 
 menu-bookmarks-menu =
-    .label = Bookmarks
-    .accesskey = B
+    .label = Favorites
+    .accesskey = a
 menu-bookmarks-manage =
-    .label = Manage Bookmarks
+    .label = Manage Favorites
 menu-bookmarks-remote-tabs-promo =
-    .label = Sync Bookmarks to Mobile
+    .label = Sync Favorites to Mobile
 menu-bookmark-tab =
-    .label = Bookmark Current Tab…
+    .label = Favorite Current Tab…
 menu-edit-bookmark =
-    .label = Edit This Bookmark…
+    .label = Edit This Favorite…
 # "Search" is a verb, as in "Search in bookmarks"
 menu-bookmarks-search =
-    .label = Search Bookmarks
+    .label = Search Favorites
 menu-bookmarks-all-tabs =
-    .label = Bookmark All Tabs…
+    .label = Favorite All Tabs…
 menu-bookmarks-toolbar =
-    .label = Bookmarks Toolbar
+    .label = Favorites Toolbar
 menu-bookmarks-other =
-    .label = Other Bookmarks
+    .label = Other Favorites
 menu-bookmarks-mobile =
-    .label = Mobile Bookmarks
+    .label = Mobile Favorites
 
 # The native macOS menu may limit the number of query results. When that happens,
 # this item opens the bookmarks or history sidebar to show more results.

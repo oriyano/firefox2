@@ -37,8 +37,6 @@ const lazy = XPCOMUtils.declareLazy({
   UrlbarPrefs: "moz-src:///browser/components/urlbar/UrlbarPrefs.sys.mjs",
   UrlbarProviderOpenTabs:
     "moz-src:///browser/components/urlbar/UrlbarProviderOpenTabs.sys.mjs",
-  UrlbarProviderSemanticHistorySearch:
-    "moz-src:///browser/components/urlbar/UrlbarProviderSemanticHistorySearch.sys.mjs",
   UrlbarProviderTopSites:
     "moz-src:///browser/components/urlbar/UrlbarProviderTopSites.sys.mjs",
   UrlbarQueryContext: "chrome://browser/content/urlbar/UrlbarQueryContext.mjs",
@@ -2287,33 +2285,13 @@ export class TelemetryEvent {
   }
 
   /**
-   * Retrieves available semantic search sources.
-   * Ensure it is the provider initializing the semantic manager, since it
-   * provides the right configuration for the singleton.
+   * Retrieves available semantic search sources. Vixen has no semantic
+   * history search, so there are never any.
    *
-   * @returns {Array<string>} Array of found sources, will contain just "none"
-   *   if no sources were found.
+   * @returns {Array<string>} Always ["none"].
    */
   #getAvailableSemanticSources() {
-    let sources = [];
-    try {
-      const semanticManager =
-        lazy.UrlbarProviderSemanticHistorySearch.semanticManager;
-      const isSmartbar = this._controller.sapName === "smartbar";
-      if (
-        isSmartbar
-          ? semanticManager.isEnabledForSmartWindow
-          : semanticManager.canUseSemanticSearch
-      ) {
-        sources.push("history");
-      }
-    } catch (e) {
-      lazy.logger.error("Error getting the semantic manager:", e);
-    }
-    if (!sources.length) {
-      sources.push("none");
-    }
-    return sources;
+    return ["none"];
   }
 
   /**

@@ -23,7 +23,7 @@ backup-file-name = { -brand-product-name }Backup
 
 settings-data-backup-header2 =
     .label = Backup
-    .description = Automatically protect your bookmarks, history, and other data.
+    .description = Automatically protect your favorites, history, and other data.
 settings-data-backup-toggle = Manage backup
 settings-data-backup-toggle-on2 =
     .label = Turn on backup
@@ -239,7 +239,7 @@ backup-error-retry = Something went wrong. Please try again.
 
 backup-file-header = { -brand-short-name } is ready to be restored
 backup-file-title = Restore { -brand-short-name }
-backup-file-intro = Get back to browsing and recover all your bookmarks, history, and other data. <a data-l10n-name="backup-file-support-link">Learn more</a>
+backup-file-intro = Get back to browsing and recover all your favorites, history, and other data. <a data-l10n-name="backup-file-support-link">Learn more</a>
 
 backup-file-path-label = Backup file:
 

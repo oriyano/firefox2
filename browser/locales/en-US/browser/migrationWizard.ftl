@@ -38,7 +38,7 @@ migration-wizard-migrator-display-name-chromium-edge-beta = Microsoft Edge Beta
 migration-wizard-migrator-display-name-edge-legacy = Microsoft Edge Legacy
 migration-wizard-migrator-display-name-self = { -brand-product-name }
 migration-wizard-migrator-display-name-file-password-csv = Passwords from CSV file
-migration-wizard-migrator-display-name-file-bookmarks = Bookmarks from HTML file
+migration-wizard-migrator-display-name-file-bookmarks = Favorites from HTML file
 migration-wizard-migrator-display-name-ie = Microsoft Internet Explorer
 migration-wizard-migrator-display-name-opera = Opera
 migration-wizard-migrator-display-name-opera-gx = Opera GX
@@ -83,7 +83,7 @@ migration-selected-data-label = Import selected data
 ##
 
 migration-select-all-option-label = Select all
-migration-bookmarks-option-label = Bookmarks
+migration-bookmarks-option-label = Favorites
 
 # Favorites is used for Bookmarks when importing from Internet Explorer or
 # Edge, as this is the terminology for bookmarks on those browsers.
@@ -143,11 +143,11 @@ migration-wizard-progress-success-updated-passwords =
        *[other] { $updatedEntries } updated
     }
 
-migration-bookmarks-from-file-picker-title = Import bookmarks file
-migration-bookmarks-from-file-progress-header = Importing bookmarks
-migration-bookmarks-from-file = Bookmarks
-migration-bookmarks-from-file-success-header = Bookmarks imported successfully
-migration-bookmarks-from-file-no-valid-data = The file doesn’t include any bookmark data. Pick another file.
+migration-bookmarks-from-file-picker-title = Import favorites file
+migration-bookmarks-from-file-progress-header = Importing favorites
+migration-bookmarks-from-file = Favorites
+migration-bookmarks-from-file-success-header = Favorites imported successfully
+migration-bookmarks-from-file-no-valid-data = The file doesn’t include any favorite data. Pick another file.
 
 # A description for the .html file format that may be shown as the file type
 # filter by the operating system.
@@ -168,8 +168,8 @@ migration-bookmarks-from-file-json-filter-title = JSON File
 #  $newEntries (Number): the number of imported bookmarks.
 migration-wizard-progress-success-new-bookmarks =
     { $newEntries ->
-        [one] { $newEntries } bookmark
-       *[other] { $newEntries } bookmarks
+        [one] { $newEntries } favorite
+       *[other] { $newEntries } favorites
     }
 
 migration-import-button-label = Import
@@ -179,7 +179,7 @@ migration-cancel-button-label = Cancel
 migration-done-button-label = Done
 migration-continue-button-label = Continue
 
-migration-wizard-import-browser-no-browsers = { -brand-short-name } couldn’t find any programs that contain bookmark, history or password data.
+migration-wizard-import-browser-no-browsers = { -brand-short-name } couldn’t find any programs that contain favorite, history or password data.
 migration-wizard-import-browser-no-resources = There was an error. { -brand-short-name } can’t find any data to import from that browser profile.
 
 ## These strings will be used to create a dynamic list of items that can be
@@ -188,7 +188,7 @@ migration-wizard-import-browser-no-resources = There was an error. { -brand-shor
 ## When applicable, the resources should be in their plural form.
 ## For example, a possible list could be "Bookmarks, passwords and autofill data".
 
-migration-list-bookmark-label = bookmarks
+migration-list-bookmark-label = favorites
 
 # “favorites” refers to bookmarks in Edge and Internet Explorer. Use the same terminology
 # if the browser is available in your language.
@@ -254,8 +254,8 @@ migration-manual-password-import-select-button = Select file
 #  $quantity (Number): the number of successfully imported bookmarks
 migration-wizard-progress-success-bookmarks =
     { $quantity ->
-        [one] { $quantity } bookmark
-       *[other] { $quantity } bookmarks
+        [one] { $quantity } favorite
+       *[other] { $quantity } favorites
     }
 
 # Shown in the migration wizard after importing bookmarks from either
@@ -338,6 +338,6 @@ migration-wizard-progress-success-payment-methods =
        *[other] { $quantity } payment methods
     }
 
-migration-wizard-safari-permissions-sub-header = To import Safari bookmarks and browsing history:
+migration-wizard-safari-permissions-sub-header = To import Safari favorites and browsing history:
 migration-wizard-safari-instructions-continue = Select “Continue”
 migration-wizard-safari-instructions-folder = Select Safari folder in the list and choose “Open”

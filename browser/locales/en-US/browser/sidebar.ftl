@@ -122,7 +122,7 @@ sidebar-context-menu-open-in-private-window =
 sidebar-context-menu-forget-site =
   .label = Clear All Data for Website…
 sidebar-context-menu-bookmark-tab =
-  .label = Bookmark Tab…
+  .label = Favorite Tab…
 sidebar-context-menu-copy-link =
   .label = Copy Link
 sidebar-context-menu-hide-sidebar =
@@ -145,16 +145,16 @@ sidebar-context-menu-unpin-extension =
 sidebar-history-context-menu-delete-page-2 =
   .label = Delete Page from History
 sidebar-history-context-menu-bookmark-page =
-  .label = Bookmark Page…
+  .label = Favorite Page…
 sidebar-history-context-menu-delete-pages =
   .label = Delete Pages from History
 
 ## Labels for sidebar bookmarks context menu items
 
 sidebar-bookmarks-context-menu-edit-bookmark =
-  .label = Edit Bookmark…
+  .label = Edit Favorite…
 sidebar-bookmarks-context-menu-delete-bookmark =
-  .label = Delete Bookmark
+  .label = Delete Favorite
 sidebar-bookmarks-context-menu-delete-separator =
   .label = Delete
 
@@ -215,7 +215,7 @@ sidebar-menu-synced-tabs-label =
 sidebar-menu-open-tabs-label =
   .label = Open tabs
 sidebar-menu-bookmarks-label =
-  .label = Bookmarks
+  .label = Favorites
 sidebar-menu-customize-label =
   .label = Customize sidebar
 sidebar-menu-contextual-password-manager-label =
@@ -240,12 +240,12 @@ sidebar-menu-close-history-tooltip = Close history ({ $shortcut })
 # The tooltip to show over the bookmarks icon, when bookmarks is not currently showing.
 # Variables:
 #   $shortcut (String) - The OS specific keyboard shortcut.
-sidebar-menu-open-bookmarks-tooltip = Open bookmarks ({ $shortcut })
+sidebar-menu-open-bookmarks-tooltip = Open favorites ({ $shortcut })
 
 # The tooltip to show over the bookmarks icon, when bookmarks is currently showing.
 # Variables:
 #   $shortcut (String) - The OS specific keyboard shortcut.
-sidebar-menu-close-bookmarks-tooltip = Close bookmarks ({ $shortcut })
+sidebar-menu-close-bookmarks-tooltip = Close favorites ({ $shortcut })
 
 ## Tooltips displayed over the AI chatbot icon.
 ## Variables:
@@ -275,18 +275,18 @@ sidebar-menu-open-tabs-header =
 sidebar-menu-cpm-header =
   .heading = Passwords
 sidebar-menu-bookmarks-header =
-  .heading = Bookmarks
+  .heading = Favorites
 
 ## Labels for sidebar bookmarks panel folder names.
 
-sidebar-bookmarks-folder-menu = Bookmarks Menu
-sidebar-bookmarks-folder-toolbar = Bookmarks Toolbar
-sidebar-bookmarks-folder-other = Other Bookmarks
-sidebar-bookmarks-folder-mobile = Mobile Bookmarks
+sidebar-bookmarks-folder-menu = Favorites Menu
+sidebar-bookmarks-folder-toolbar = Favorites Toolbar
+sidebar-bookmarks-folder-other = Other Favorites
+sidebar-bookmarks-folder-mobile = Mobile Favorites
 
 ## Titles for sidebar menu panels.
 
-sidebar-bookmarks-title = Bookmarks
+sidebar-bookmarks-title = Favorites
 sidebar-customize-title = Customize sidebar
 sidebar-history-title = History
 sidebar-syncedtabs-title = Tabs from other devices

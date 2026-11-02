@@ -283,7 +283,7 @@ mr2022-onboarding-gratitude-secondary-button-label = Start browsing
 ## Onboarding spotlight for infrequent users
 
 onboarding-infrequent-import-title = Make yourself at home
-onboarding-infrequent-import-subtitle = Whether you’re settling in or just stopping by, remember you can import your bookmarks, passwords, and more.
+onboarding-infrequent-import-subtitle = Whether you’re settling in or just stopping by, remember you can import your favorites, passwords, and more.
 onboarding-infrequent-import-primary-button = Import to { -brand-short-name }
 
 ## MR2022 Illustration alt tags
@@ -309,7 +309,7 @@ mr2022-onboarding-gratitude-image-alt =
 onboarding-device-migration-image-alt =
   .aria-label = A fox on the screen of a laptop computer waving. The laptop has a mouse plugged into it.
 onboarding-device-migration-title = Welcome back!
-onboarding-device-migration-subtitle2 = Sign in to your account to bring your bookmarks, passwords, and history with you on your new device.
+onboarding-device-migration-subtitle2 = Sign in to your account to bring your favorites, passwords, and history with you on your new device.
 onboarding-device-migration-primary-button-label = Sign in
 
 ## Add-ons Picker screen
@@ -328,7 +328,7 @@ onboarding-easy-setup-security-and-privacy-subtitle = Our non-profit backed brow
 
 # Mobile download screen
 onboarding-mobile-download-security-and-privacy-title = Stay encrypted when you hop between devices
-onboarding-mobile-download-security-and-privacy-subtitle = When you’re synced up, { -brand-short-name } encrypts your passwords, bookmarks, and more. Plus you can grab tabs from your other devices.
+onboarding-mobile-download-security-and-privacy-subtitle = When you’re synced up, { -brand-short-name } encrypts your passwords, favorites, and more. Plus you can grab tabs from your other devices.
 
 # Gratitude screen
 onboarding-gratitude-security-and-privacy-title = { -brand-short-name } has your back
@@ -336,7 +336,7 @@ onboarding-gratitude-security-and-privacy-subtitle = Thank you for using { -bran
 
 # Sign up or Sign in screen
 onboarding-sign-up-title = Sync your data across devices
-onboarding-sign-up-description = Sign up for an account and all of your important info — passwords, bookmarks, and more — will be securely stored and available when you sign in to any device.
+onboarding-sign-up-description = Sign up for an account and all of your important info — passwords, favorites, and more — will be securely stored and available when you sign in to any device.
 onboarding-sign-up-button = Sign up or sign in
 onboarding-sign-up-secondary-button = Start browsing
 
@@ -484,7 +484,7 @@ multi-profile-callout-cta = Create a profile
 desktop-to-mobile-headline = Download, sync, and go!
 
 # The phrase, 'on the go', is used to describe when people are very busy and are traveling from place to place.
-desktop-to-mobile-subtitle = Scan the QR code to download { -brand-product-name } for mobile. Once installed, select “Sync to mobile” to access your passwords, bookmarks, and more on the go.
+desktop-to-mobile-subtitle = Scan the QR code to download { -brand-product-name } for mobile. Once installed, select “Sync to mobile” to access your passwords, favorites, and more on the go.
 
 dismiss-button-label = Dismiss
 sync-to-mobile-button-label = Sync to mobile
@@ -495,7 +495,7 @@ desktop-to-mobile-qr-code-alt =
 
 create-backup-screen-1-title = Upgrading to Windows 11?
     Let’s back up your { -brand-product-name } data.
-create-backup-screen-1-subtitle = Automatically protect your passwords, bookmarks, and more in 1–2 minutes.
+create-backup-screen-1-subtitle = Automatically protect your passwords, favorites, and more in 1–2 minutes.
 create-backup-screen-1-flair = Recommended
 create-backup-learn-more-link = <a data-l10n-name="learn-more-label">Learn more</a>
 create-backup-screen-1-sync-label = Sync with { -brand-product-name }
@@ -511,7 +511,7 @@ create-backup-screen-2-subtitle = Only takes a minute. Your data is backed up on
 # Label for the "Easy setup" backup option
 create-backup-screen-2-easy-label = Easy setup
 # Preceded by a green check mark indicating that these are included in "Easy setup" backup
-create-backup-screen-2-easy-list-1 = Bookmarks, history, settings, and more
+create-backup-screen-2-easy-list-1 = Favorites, history, settings, and more
 # Preceded by a red X indicating that these are not included in the "Easy setup" backup
 create-backup-screen-2-easy-list-2 = Doesn’t include passwords and payments
 # Preceded by a red X indicating that "Easy setup" backups are not encrypted
@@ -548,7 +548,7 @@ fx-backup-confirmation-screen-all-data-item-text-1 = All browsing data included
 fx-backup-confirmation-screen-all-data-item-text-2 = Saved to your device
 fx-backup-confirmation-screen-all-data-item-text-3 = Encrypted and password protected
 
-fx-backup-confirmation-screen-easy-setup-item-text-1 = Bookmarks, history, settings, and other data included
+fx-backup-confirmation-screen-easy-setup-item-text-1 = Favorites, history, settings, and other data included
 fx-backup-confirmation-screen-easy-setup-item-text-2 = Saved to your device
 fx-backup-confirmation-screen-easy-setup-item-text-3 = Passwords and payments not included
 fx-backup-confirmation-screen-easy-setup-item-subtext-3 = Go to <a data-l10n-name="settings">Settings</a> to include sensitive data.
@@ -560,7 +560,7 @@ fx-backup-confirmation-screen-item-subtext-2 = { -brand-short-name } will look f
 
 restore-from-backup-secondary-top-button = Restore from Backup
 restore-from-backup-title = Let’s get { -brand-short-name } back how you like it
-restore-from-backup-subtitle = Recover all your bookmarks, history, and other data to get back to browsing.
+restore-from-backup-subtitle = Recover all your favorites, history, and other data to get back to browsing.
 restore-from-backup-secondary-button = Don’t restore
 
 multiple-backups-info-tile = <strong>Multiple backup files found.</strong> The most recent file is selected. Restore other profiles in <a data-l10n-name="settings-label">Settings.</a>
@@ -597,12 +597,12 @@ onboarding-refresh-pin-set-default-subtitle = We protect your data and block com
 # "safe paws" is a play on "safe hands", meaning you're being well taken care of or protected
 # If it doesn’t translate well, you can use the alternative: “You’re safe with Firefox.”
 onboarding-refresh-pin-set-default-title = You’re in safe paws
-onboarding-refresh-import-subtitle = Bring over your passwords, bookmarks, history and more.
+onboarding-refresh-import-subtitle = Bring over your passwords, favorites, history and more.
 onboarding-refresh-import-title = Make { -brand-short-name } feel more like home
 onboarding-refresh-onboarding-addons-subtitle = Extensions are tiny apps that let you customize { -brand-short-name }. They can power up your privacy, enhance productivity, change the way { -brand-short-name } looks, and so much more.
 # "Give your browsing a boost" means to enhance or improve the browsing experience
 onboarding-refresh-onboarding-addons-title = Give your browsing a boost
-onboarding-refresh-sync-subtitle = Grab bookmarks, passwords, and more everywhere you’re signed in to { -brand-short-name }. Plus, your data is encrypted so only you can see it.
+onboarding-refresh-sync-subtitle = Grab favorites, passwords, and more everywhere you’re signed in to { -brand-short-name }. Plus, your data is encrypted so only you can see it.
 onboarding-refresh-sync-title = Go anywhere. Sync everything.
 onboarding-refresh-gratitude-subtitle = Thank you for using { -brand-short-name }, the only major browser backed by a non-profit. With your support, we’re working to make the internet safer and more accessible for everyone.
 # "has your back" is an idiom suggesting support and protection
@@ -709,7 +709,7 @@ welcome-back-onboarding-card-tilebutton-label = Try it
 ## New Tab Onboarding cards
 
 hnt-card-import-header = Set up your { -brand-short-name } in seconds
-hnt-card-import-body = Bring in your bookmarks, passwords, and more from another browser.
+hnt-card-import-body = Bring in your favorites, passwords, and more from another browser.
 hnt-card-import-primary-button = Import your data
 
 hnt-card-default-body = { -brand-product-name } is the only major browser built to protect you, not track you.

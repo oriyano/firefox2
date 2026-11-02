@@ -27,7 +27,7 @@ callout-firefox-view-recently-closed-subtitle = All your closed tabs will magica
 # Alternative: ”Improve your browsing experience with tab pickup”
 continuous-onboarding-firefox-view-tab-pickup-title = Boost your browsing with tab pickup
 
-continuous-onboarding-firefox-view-tab-pickup-subtitle = Access your open tabs from any device. Plus sync your bookmarks, passwords, and more.
+continuous-onboarding-firefox-view-tab-pickup-subtitle = Access your open tabs from any device. Plus sync your favorites, passwords, and more.
 
 continuous-onboarding-firefox-view-tab-pickup-primary-button-label = Get started
 
@@ -117,7 +117,7 @@ sidebar-callout-survey-strongly-disagree = Strongly disagree
 sidebar-callout-survey-features-question = The following are potential sidebar features. Which would improve your productivity in { -brand-short-name } the most?
 sidebar-callout-survey-split-view = View any two websites at once, in a side-by-side split view
 sidebar-callout-survey-keep-website-open = Keep a website, like email or calendar, open in the sidebar as you browse
-sidebar-callout-survey-saved-websites-2 = Quick access to your bookmarks
+sidebar-callout-survey-saved-websites-2 = Quick access to your favorites
 sidebar-callout-survey-none-of-above = None of the above
 sidebar-callout-survey-submit = Submit
 sidebar-callout-survey-thank-you = Thank you for your feedback!
@@ -147,7 +147,7 @@ unified-search-callout-primary-label = Next
 unified-search-callout-secondary-label = Dismiss
 
 unified-search-engines-callout-title = Search with a shortcut
-unified-search-engines-callout-subtitle = Type “@” followed by a keyword to search your history, bookmarks, tabs, or with another search engine.
+unified-search-engines-callout-subtitle = Type “@” followed by a keyword to search your history, favorites, tabs, or with another search engine.
 unified-search-engines-callout-primary-label = Got it
 
 actions-callout-title = Complete common tasks or access basic settings
@@ -184,18 +184,18 @@ login-status-advisory-title = You’re signed out. Click the account icon to sig
 
 ## Bookmarks toolbar callout strings
 
-bookmarks-toolbar-callout-1-title = Add this site to your bookmarks toolbar?
-bookmarks-toolbar-callout-1-subtitle = Your bookmark will be saved just below the address bar for quick access.
-bookmarks-toolbar-callout-1-primary-button-label = Add bookmark
+bookmarks-toolbar-callout-1-title = Add this site to your favorites toolbar?
+bookmarks-toolbar-callout-1-subtitle = Your favorite will be saved just below the address bar for quick access.
+bookmarks-toolbar-callout-1-primary-button-label = Add favorite
 bookmarks-toolbar-callout-1-secondary-button-label = No Thanks
 # Visible if user adds a bookmark in callout 1, bookmarks toolbar is set to always show when this message renders
-bookmarks-toolbar-callout-2a-title = Easily add more bookmarks
+bookmarks-toolbar-callout-2a-title = Easily add more favorites
 bookmarks-toolbar-callout-2a-subtitle = You can drag and drop tabs here to keep more of your favorite sites within reach.
 bookmarks-toolbar-callout-2a-primary-button-label = Got it
 # Reverts the bookmarks toolbar to the default setting
 bookmarks-toolbar-callout-2a-secondary-button-label = Hide Toolbar
 # Visible if user declines to add a bookmark in callout 1, bookmarks toolbar is set to always show when this message renders
-bookmarks-toolbar-callout-2b-title = Keep your bookmarks toolbar open?
+bookmarks-toolbar-callout-2b-title = Keep your favorites toolbar open?
 bookmarks-toolbar-callout-2b-subtitle = You can add other sites you visit more often. Simply drag and drop tabs here to keep favorite websites within reach.
 bookmarks-toolbar-callout-2b-primary-button-label = Keep open
 # Reverts the bookmarks toolbar to the default setting
@@ -277,25 +277,25 @@ taskbar-tabs-callout-primary-button-v3 = Pin to taskbar
 ## Windows 10 EoS Sync messages group 1 callouts
 
 windows-10-eos-sync-urgency-title-1 = Don’t lose everything you’ve saved when you move to Windows 11.
-windows-10-eos-sync-urgency-subtitle-1 = Sync now to keep your { -brand-short-name } bookmarks, passwords, and settings safe and easy to restore.
+windows-10-eos-sync-urgency-subtitle-1 = Sync now to keep your { -brand-short-name } favorites, passwords, and settings safe and easy to restore.
 windows-10-eos-sync-urgency-title-2 = Saying goodbye to Windows 10? Protect your data when you switch.
-windows-10-eos-sync-urgency-subtitle-2 = Even if you don’t use { -brand-short-name } daily, sync to keep bookmarks and passwords safe and accessible.
+windows-10-eos-sync-urgency-subtitle-2 = Even if you don’t use { -brand-short-name } daily, sync to keep favorites and passwords safe and accessible.
 
 windows-10-eos-sync-new-device-title-1 = Don’t risk starting over on your next device.
-windows-10-eos-sync-new-device-subtitle-1 = Sync to take your { -brand-short-name } bookmarks, passwords, and preferred settings with you when you move.
+windows-10-eos-sync-new-device-subtitle-1 = Sync to take your { -brand-short-name } favorites, passwords, and preferred settings with you when you move.
 windows-10-eos-sync-new-device-title-2 = Moving to a new device? Don’t lose what matters.
-windows-10-eos-sync-new-device-subtitle-2 = No matter how often you use { -brand-short-name }, syncing protects your bookmarks, passwords, and settings.
+windows-10-eos-sync-new-device-subtitle-2 = No matter how often you use { -brand-short-name }, syncing protects your favorites, passwords, and settings.
 windows-10-eos-sync-new-device-primary-label = Sync now
 
 windows-10-eos-sync-general-title-1 = Protect the { -brand-short-name } you’ve made yours.
-windows-10-eos-sync-general-subtitle-1 = Back up and sync your passwords, bookmarks, settings, and other data to preserve what you count on.
-windows-10-eos-sync-general-title-2 = Now’s a good time to back up your passwords and bookmarks.
+windows-10-eos-sync-general-subtitle-1 = Back up and sync your passwords, favorites, settings, and other data to preserve what you count on.
+windows-10-eos-sync-general-title-2 = Now’s a good time to back up your passwords and favorites.
 windows-10-eos-sync-general-subtitle-2 = Sync now to protect the stuff you trust { -brand-short-name } with — and get it back anywhere, anytime.
 
 windows-10-eos-sync-tour-title-1 = Too many tabs? Tidy up with tab groups.
 windows-10-eos-sync-tour-subtitle-1 = Drag one tab on top of another to create a group and keep things organized.
 windows-10-eos-sync-tour-title-2 = Get organized for Windows 11.
-windows-10-eos-sync-tour-subtitle-2 = Sync your bookmarks, passwords, and settings to back them up before you switch.
+windows-10-eos-sync-tour-subtitle-2 = Sync your favorites, passwords, and settings to back them up before you switch.
 
 windows-10-eos-sync-split-dismiss-button-show-fewer-option =
     .label = Show fewer recommendations

@@ -84,11 +84,6 @@ var localProviderModules = [
     supportedSAPs: ["newtab_searchbar", "searchbar", "smartbar", "urlbar"],
   },
   {
-    name: "UrlbarProviderAiChat",
-    module: "moz-src:///browser/components/urlbar/UrlbarProviderAiChat.sys.mjs",
-    supportedSAPs: ["smartbar", "urlbar"],
-  },
-  {
     name: "UrlbarProviderClipboard",
     module:
       "moz-src:///browser/components/urlbar/UrlbarProviderClipboard.sys.mjs",
@@ -176,12 +171,6 @@ var localProviderModules = [
     module:
       "moz-src:///browser/components/urlbar/UrlbarProviderSearchSuggestions.sys.mjs",
     supportedSAPs: ["newtab_searchbar", "searchbar", "smartbar", "urlbar"],
-  },
-  {
-    name: "UrlbarProviderSemanticHistorySearch",
-    module:
-      "moz-src:///browser/components/urlbar/UrlbarProviderSemanticHistorySearch.sys.mjs",
-    supportedSAPs: ["smartbar", "urlbar"],
   },
   {
     name: "UrlbarProviderTabToSearch",

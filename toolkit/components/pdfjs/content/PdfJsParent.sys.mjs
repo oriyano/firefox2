@@ -20,27 +20,15 @@ import { playSound } from "resource://gre/modules/FinderSound.sys.mjs";
 const lazy = {};
 
 ChromeUtils.defineESModuleGetters(lazy, {
-  clearTimeout: "resource://gre/modules/Timer.sys.mjs",
-  createEngine: "chrome://global/content/ml/EngineProcess.sys.mjs",
   IndexedDB: "resource://gre/modules/IndexedDB.sys.mjs",
-  MLUninstallService: "chrome://global/content/ml/Utils.sys.mjs",
-  MultiProgressAggregator: "chrome://global/content/ml/Utils.sys.mjs",
   PdfJsFeaturesNotification:
     "resource://pdf.js/PdfJsFeaturesNotification.sys.mjs",
-  PdfJsGuessAltTextFeature: "resource://pdf.js/PdfJsAIFeature.sys.mjs",
   PdfJsPrint: "resource://pdf.js/PdfJsPrint.sys.mjs",
-  Progress: "chrome://global/content/ml/Utils.sys.mjs",
   NimbusFeatures: "resource://nimbus/ExperimentAPI.sys.mjs",
   PrivateBrowsingUtils: "resource://gre/modules/PrivateBrowsingUtils.sys.mjs",
   SetClipboardSearchString: "resource://gre/modules/Finder.sys.mjs",
-  setTimeout: "resource://gre/modules/Timer.sys.mjs",
 });
 
-const IMAGE_TO_TEXT_TASK = "moz-image-to-text";
-const ML_ENGINE_MAX_TIMEOUT = 60000;
-// Lets a test run the real alt-text model in automation.
-const ALT_TEXT_INFERENCE_IN_AUTOMATION_PREF =
-  "pdfjs.altText.inferenceInAutomation";
 const PDFJS_DB_NAME = "pdfjs";
 const PDFJS_DB_VERSION = 1;
 const PDFJS_STORE_NAME = "signatures";
@@ -123,13 +111,6 @@ export function filterCertsForView(data) {
       BASE64_RE.test(d)
   );
   return certs.length ? certs : null;
-}
-
-function stubAltTextInference() {
-  return (
-    Cu.isInAutomation &&
-    !Services.prefs.getBoolPref(ALT_TEXT_INFERENCE_IN_AUTOMATION_PREF, false)
-  );
 }
 
 /**
@@ -593,196 +574,17 @@ export class PdfJsParent extends JSWindowActorParent {
     PdfJsTelemetry.report(data);
   }
 
-  async _mlGuess({ data }) {
-    const { service, request } = data ?? {};
-    if (service !== IMAGE_TO_TEXT_TASK || !validateMLGuessRequest(request)) {
-      return null;
-    }
-    try {
-      const now = ChromeUtils.now();
-
-      let response;
-      if (stubAltTextInference()) {
-        response = { output: "In Automation" };
-      } else {
-        const engine = await this.#createAIEngine(service, null);
-        response = await engine.run(request);
-      }
-
-      const time = ChromeUtils.now() - now;
-      const length = response?.output.length ?? 0;
-      PdfJsTelemetry.report({
-        type: "editing",
-        data: {
-          type: "stamp",
-          action: "pdfjs.image.alt_text.model_result",
-          data: { time, length },
-        },
-      });
-      return response;
-    } catch (e) {
-      console.error("Failed to run AI engine", e);
-      return { error: true };
-    }
+  // Vixen ships without the AI image description model.
+  async _mlGuess() {
+    return { error: true };
   }
 
-  async _loadAIEngine({ data: { service, listenToProgress } }) {
-    if (service !== IMAGE_TO_TEXT_TASK) {
-      throw new Error("Invalid service");
-    }
-
-    if (stubAltTextInference()) {
-      PdfJsTelemetry.report({
-        type: "editing",
-        data: {
-          type: "stamp",
-          action: "pdfjs.image.alt_text.model_download_start",
-        },
-      });
-      PdfJsTelemetry.report({
-        type: "editing",
-        data: {
-          type: "stamp",
-          action: "pdfjs.image.alt_text.model_download_complete",
-        },
-      });
-      return true;
-    }
-
-    let hasDownloadStarted = false;
-    const self = this;
-    const timeoutCallback = () => {
-      lazy.clearTimeout(timeoutId);
-      timeoutId = null;
-      if (hasDownloadStarted) {
-        PdfJsTelemetry.report({
-          type: "editing",
-          data: {
-            type: "stamp",
-            action: "pdfjs.image.alt_text.model_download_error",
-          },
-        });
-      }
-      if (!listenToProgress) {
-        return;
-      }
-      self.sendAsyncMessage("PDFJS:Child:handleEvent", {
-        type: "loadAIEngineProgress",
-        detail: {
-          service,
-          ok: false,
-          finished: true,
-        },
-      });
-    };
-    let timeoutId = lazy.setTimeout(timeoutCallback, ML_ENGINE_MAX_TIMEOUT);
-    const aggregator = new lazy.MultiProgressAggregator({
-      progressCallback({ ok, total, totalLoaded, statusText, type }) {
-        if (timeoutId !== null) {
-          lazy.clearTimeout(timeoutId);
-          timeoutId = lazy.setTimeout(timeoutCallback, ML_ENGINE_MAX_TIMEOUT);
-        } else {
-          // The timeout has already fired, so we don't need to do anything.
-          this.progressCallback = null;
-          return;
-        }
-        if (
-          !hasDownloadStarted &&
-          type === lazy.Progress.ProgressType.DOWNLOAD
-        ) {
-          hasDownloadStarted = true;
-          PdfJsTelemetry.report({
-            type: "editing",
-            data: {
-              type: "stamp",
-              action: "pdfjs.image.alt_text.model_download_start",
-            },
-          });
-        }
-        const finished = statusText === lazy.Progress.ProgressStatusText.DONE;
-        if (listenToProgress) {
-          self.sendAsyncMessage("PDFJS:Child:handleEvent", {
-            type: "loadAIEngineProgress",
-            detail: {
-              service,
-              ok,
-              total,
-              totalLoaded,
-              finished,
-            },
-          });
-        }
-        if (finished) {
-          if (
-            hasDownloadStarted &&
-            type === lazy.Progress.ProgressType.DOWNLOAD
-          ) {
-            PdfJsTelemetry.report({
-              type: "editing",
-              data: {
-                type: "stamp",
-                action: `pdfjs.image.alt_text.model_download_${
-                  ok ? "complete" : "error"
-                }`,
-              },
-            });
-          }
-
-          lazy.clearTimeout(timeoutId);
-          // Once we're done, we can remove the progress callback.
-          this.progressCallback = null;
-        }
-      },
-      watchedTypes: [
-        lazy.Progress.ProgressType.DOWNLOAD,
-        lazy.Progress.ProgressType.LOAD_FROM_CACHE,
-      ],
-    });
-    return !!(await this.#createAIEngine(service, aggregator));
+  async _loadAIEngine() {
+    return false;
   }
 
-  async _mlDelete({ data: service }) {
-    if (service !== IMAGE_TO_TEXT_TASK) {
-      return null;
-    }
-    PdfJsTelemetry.report({
-      type: "editing",
-      data: {
-        type: "stamp",
-        action: "pdfjs.image.alt_text.model_deleted",
-      },
-    });
-    if (Cu.isInAutomation) {
-      return null;
-    }
-    try {
-      await lazy.MLUninstallService.uninstall({
-        engineIds: [lazy.PdfJsGuessAltTextFeature.engineId],
-        // Used only for attribution/telemetry; the specific value is not significant.
-        actor: "pdfjs",
-      });
-    } catch (e) {
-      console.error("Failed to delete AI model", e);
-    }
-
+  async _mlDelete() {
     return null;
-  }
-
-  async #createAIEngine(taskName, aggregator) {
-    try {
-      return await lazy.createEngine(
-        {
-          engineId: lazy.PdfJsGuessAltTextFeature.engineId,
-          featureId: lazy.PdfJsGuessAltTextFeature.id,
-          taskName,
-          backend: "best-onnx",
-        },
-        aggregator?.aggregateCallback.bind(aggregator) || null
-      );
-    } catch (e) {
-      console.error("Failed to create AI engine", e);
-      return null;
-    }
   }
 
   _saveURL(aMsg) {

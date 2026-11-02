@@ -68,9 +68,9 @@ cfr-doorhanger-extension-total-users =
 
 ## Mozilla Account messages
 
-cfr-doorhanger-bookmark-fxa-header = Sync your bookmarks everywhere.
-cfr-doorhanger-bookmark-fxa-body-2 = Great find! Now don’t be left without this bookmark on your mobile devices. Get started with an account.
-cfr-doorhanger-bookmark-fxa-link-text = Sync bookmarks now…
+cfr-doorhanger-bookmark-fxa-header = Sync your favorites everywhere.
+cfr-doorhanger-bookmark-fxa-body-2 = Great find! Now don’t be left without this favorite on your mobile devices. Get started with an account.
+cfr-doorhanger-bookmark-fxa-link-text = Sync favorites now…
 cfr-doorhanger-bookmark-fxa-close-btn-tooltip =
   .aria-label = Close button
   .title = Close
@@ -79,8 +79,8 @@ fxa-adoption-addresses-backup-title = Let’s back up your saved addresses
 fxa-adoption-addresses-backup-subtitle = Protect your saved addresses by syncing them to your devices with encryption.
 fxa-adoption-credit-cards-backup-title = Let’s back up your payment methods
 fxa-adoption-credit-cards-backup-subtitle = Protect your payment methods by syncing them to your devices with encryption.
-fxa-adoption-bookmarks-treatment-backup-title = Let’s back up your bookmarks
-fxa-adoption-bookmarks-treatment-backup-subtitle = Protect your bookmarks by syncing them to your devices with encryption.
+fxa-adoption-bookmarks-treatment-backup-title = Let’s back up your favorites
+fxa-adoption-bookmarks-treatment-backup-subtitle = Protect your favorites by syncing them to your devices with encryption.
 
 fxa-adoption-primary-button-label = Sign up
 
@@ -216,7 +216,7 @@ annotations-make-default-pdf-next-label = Next
 ## FxA sync CFR
 
 fxa-sync-cfr-header = New device in your future?
-fxa-sync-cfr-body = Make sure your latest bookmarks, passwords, and tabs come with you any time you open a new { -brand-product-name } browser.
+fxa-sync-cfr-body = Make sure your latest favorites, passwords, and tabs come with you any time you open a new { -brand-product-name } browser.
 fxa-sync-cfr-primary = Learn more
   .accesskey = L
 fxa-sync-cfr-secondary = Remind me later
@@ -225,7 +225,7 @@ fxa-sync-cfr-secondary = Remind me later
 ## Device Migration FxA Spotlight
 
 device-migration-fxa-spotlight-heavy-user-header = Don’t forget to back up your data
-device-migration-fxa-spotlight-heavy-user-body = Make sure important info — like bookmarks and passwords — is updated and protected across all your devices.
+device-migration-fxa-spotlight-heavy-user-body = Make sure important info — like favorites and passwords — is updated and protected across all your devices.
 device-migration-fxa-spotlight-heavy-user-primary-button = Get started
 
 device-migration-fxa-spotlight-older-device-header = Peace of mind, from { -brand-product-name }
@@ -233,11 +233,11 @@ device-migration-fxa-spotlight-older-device-body = An account keeps your importa
 device-migration-fxa-spotlight-older-device-primary-button = Create an account
 
 device-migration-fxa-spotlight-getting-new-device-header-2 = New device in your future?
-device-migration-fxa-spotlight-getting-new-device-body-2 = Follow a few simple steps to bring your bookmarks, history, and passwords with you when you get started on a new device.
+device-migration-fxa-spotlight-getting-new-device-body-2 = Follow a few simple steps to bring your favorites, history, and passwords with you when you get started on a new device.
 device-migration-fxa-spotlight-getting-new-device-primary-button = How to back up my data
 
 device-migration-fxa-spotlight-sync-header = Browse without missing a beat
-device-migration-fxa-spotlight-sync-body = Sync all your important info with encryption — like bookmarks and passwords. You can pull everything up anywhere you use { -brand-product-name }.
+device-migration-fxa-spotlight-sync-body = Sync all your important info with encryption — like favorites and passwords. You can pull everything up anywhere you use { -brand-product-name }.
 device-migration-fxa-spotlight-sync-primary-button = Get started
 
 ## Set as Default PDF Reader Infobar
@@ -310,12 +310,12 @@ fxa-menu-message-sign-in-button = Sign in
 fxa-menu-message-sync-button = Start syncing
 
 fxa-menu-message-sync-devices-primary-text = Sync all your devices
-fxa-menu-message-sync-devices-secondary-text = Instantly get your info — like bookmarks and passwords — everywhere you use { -brand-short-name }.
-fxa-menu-message-sync-devices-secondary-text2 = Instantly get your bookmarks, passwords, and more — everywhere you’re signed in to { -brand-short-name }.
+fxa-menu-message-sync-devices-secondary-text = Instantly get your info — like favorites and passwords — everywhere you use { -brand-short-name }.
+fxa-menu-message-sync-devices-secondary-text2 = Instantly get your favorites, passwords, and more — everywhere you’re signed in to { -brand-short-name }.
 fxa-menu-message-sync-devices-collapsed-text = Sync all your devices
 
 fxa-menu-message-backup-data-primary-text = Back up your browser data
-fxa-menu-message-backup-data-secondary-text = Automatically protect bookmarks, passwords, and other info on all your devices.
+fxa-menu-message-backup-data-secondary-text = Automatically protect favorites, passwords, and other info on all your devices.
 fxa-menu-message-backup-data-collapsed-text = Back up browser data
 
 fxa-menu-message-backup-sync-primary-text = Keep your data safe and synced
@@ -349,12 +349,12 @@ multi-cta-fox-doodle-msix-privacy-focused-subtitle = Keep your favorite privacy-
 ## Windows 10 EoS Sync messages group 1 spotlight
 
 windows-10-eos-sync-spotlight-title = Upgrading from Windows 10 soon?
-windows-10-eos-sync-spotlight-subtitle = Back up your passwords and bookmarks so you’re ready to make the leap to any device.
+windows-10-eos-sync-spotlight-subtitle = Back up your passwords and favorites so you’re ready to make the leap to any device.
 windows-10-eos-sync-spotlight-primary-label = Back up your { -brand-short-name }
 
 ## Windows 10 EoS Sync messages group 1 toast notification
 
-windows-10-eos-sync-toast-title = Upgrading to Windows 11? Don’t lose bookmarks and passwords.
+windows-10-eos-sync-toast-title = Upgrading to Windows 11? Don’t lose favorites and passwords.
 windows-10-eos-sync-toast-subtitle = Back up your data so { -brand-short-name } is ready to go any time, on this PC or the next one.
 windows-10-eos-sync-toast-primary-label = Get started
 windows-10-eos-sync-toast-secondary-label = Remind me later
@@ -362,14 +362,14 @@ windows-10-eos-sync-toast-secondary-label = Remind me later
 ## Windows 10 EoS sync messages group 2 feature callouts
 
 windows-10-eos-challenger-callout-title = { -brand-product-name } isn’t preloaded like other Big Tech browsers. That’s the point.
-windows-10-eos-challenger-sync-callout-subtitle = When you back up your { -brand-product-name } bookmarks and passwords, it’s easier to bring the browser you chose to your next device.
+windows-10-eos-challenger-sync-callout-subtitle = When you back up your { -brand-product-name } favorites and passwords, it’s easier to bring the browser you chose to your next device.
 windows-10-eos-challenger-pin-callout-subtitle = Pin { -brand-shorter-name } to your taskbar so the browser you chose is always there when you need it.
 windows-10-eos-challenger-sync-primary-button = Back up { -brand-shorter-name }
 windows-10-eos-challenger-pin-primary-button = Pin { -brand-shorter-name }
 
 windows-10-eos-sync-callout-privacy-screen-1-title = { -brand-product-name } blocks cryptominers, social media trackers, and fingerprinters.
 windows-10-eos-sync-callout-privacy-screen-1-subtitle = Trackers can’t ID your device or follow you across the web — because we don’t let them.
-windows-10-eos-sync-callout-privacy-screen-2-title = Secure your passwords and bookmarks for your next device.
+windows-10-eos-sync-callout-privacy-screen-2-title = Secure your passwords and favorites for your next device.
 windows-10-eos-sync-callout-privacy-screen-2-subtitle = Backing up { -brand-shorter-name } makes it easy to bring your data and privacy settings with you.
 windows-10-eos-sync-callout-privacy-info-button = See what’s blocked
 
@@ -504,7 +504,7 @@ lapsed-user-toast-dismiss-button = Dismiss
 lapsed-user-toast-import-title = New look. No starting over.
 # "The browser you use today" refers to another browser the user currently
 # uses instead of this one, such as Chrome or Edge.
-lapsed-user-toast-import-subtitle = Bring your bookmarks, passwords and history from the browser you use today.
+lapsed-user-toast-import-subtitle = Bring your favorites, passwords and history from the browser you use today.
 
 ## Refresh Firefox infobar
 ##

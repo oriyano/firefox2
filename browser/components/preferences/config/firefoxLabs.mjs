@@ -233,7 +233,10 @@ let renderingPromise = Promise.resolve();
 async function maybeRenderLabsRecipes() {
   firefoxLabs = await FirefoxLabs.create();
 
-  let shouldHide = firefoxLabs.count === 0;
+  let shouldHide =
+    firefoxLabs.count === 0 ||
+    (Services.prefs.prefIsLocked("browser.preferences.experimental.hidden") &&
+      Services.prefs.getBoolPref("browser.preferences.experimental.hidden"));
   setCategoryVisibility(shouldHide);
 
   if (shouldHide) {

@@ -6,7 +6,7 @@
 ## Permissions for which the message has been changed and the key updated
 ## must have a corresponding entry in the `PERMISSION_L10N_ID_OVERRIDES` map.
 
-webext-perms-description-bookmarks = Read and modify bookmarks
+webext-perms-description-bookmarks = Read and modify favorites
 webext-perms-description-browserSettings = Read and modify browser settings
 webext-perms-description-browsingData = Clear recent browsing history, cookies, and related data
 webext-perms-description-clipboardRead = Get data from the clipboard
@@ -46,7 +46,7 @@ webext-perms-extra-warning-userScripts-short = Unverified scripts can pose secur
 ## This is used when the data collection permissions are required.
 
 webext-perms-description-data-short-authenticationInfo = authentication information
-webext-perms-description-data-short-bookmarksInfo = bookmarks
+webext-perms-description-data-short-bookmarksInfo = favorites
 webext-perms-description-data-short-browsingActivity = browsing activity
 webext-perms-description-data-short-financialAndPaymentInfo = financial and payment information
 webext-perms-description-data-short-healthInfo = health information
@@ -61,7 +61,7 @@ webext-perms-description-data-short-websiteContent = website content
 ## Long form to be used in `about:addons` when these data collection permissions are optional.
 
 webext-perms-description-data-long-authenticationInfo = Share authentication information with extension developer
-webext-perms-description-data-long-bookmarksInfo = Share bookmarks information with extension developer
+webext-perms-description-data-long-bookmarksInfo = Share favorites information with extension developer
 webext-perms-description-data-long-browsingActivity = Share browsing activity with extension developer
 webext-perms-description-data-long-financialAndPaymentInfo = Share financial and payment information with extension developer
 webext-perms-description-data-long-healthInfo = Share health information with extension developer

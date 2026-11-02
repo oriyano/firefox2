@@ -191,41 +191,6 @@ var SidebarController = {
     ]);
 
     this.registerPrefSidebar(
-      "browser.ml.chat.enabled",
-      "viewGenaiChatSidebar",
-      {
-        name: "aichat",
-        elementId: "sidebar-switcher-genai-chat",
-        url: "chrome://browser/content/genai/chat.html",
-        keyId: "viewGenaiChatSidebarKb",
-        menuId: "menu_genaiChatSidebar",
-        menuL10nId: "menu-view-genai-chat",
-        // Bug 1900915 to expose as conditional tool
-        revampL10nId: "sidebar-menu-genai-chat-label",
-        iconUrl: "chrome://global/skin/icons/highlights.svg",
-        gleanClickEvent: Glean.sidebar.chatbotIconClick,
-        toolContextMenuId: "aichat",
-        hasCustomHeader: true,
-        permissions: true,
-        hideInAIWindow: true,
-      }
-    );
-
-    this.registerPrefSidebar(
-      "browser.ml.pageAssist.enabled",
-      "viewGenaiPageAssistSidebar",
-      {
-        name: "aipageassist",
-        elementId: "sidebar-switcher-genai-page-assist",
-        url: "chrome://browser/content/genai/pageAssist.html",
-        menuId: "menu_genaiPageAssistSidebar",
-        menuL10nId: "menu-view-genai-page-assist",
-        revampL10nId: "sidebar-menu-genai-page-assist-label",
-        iconUrl: "chrome://browser/skin/reader-mode.svg",
-      }
-    );
-
-    this.registerPrefSidebar(
       "browser.contextual-password-manager.enabled",
       "viewCPMSidebar",
       {

@@ -7,7 +7,6 @@
 /* import-globals-from search.js */
 /* import-globals-from privacy.js */
 /* import-globals-from sync.js */
-/* import-globals-from moreFromMozilla.js */
 /* import-globals-from findInPage.js */
 /* import-globals-from /browser/base/content/utilityOverlay.js */
 /* import-globals-from /toolkit/content/preferencesBindings.js */
@@ -287,14 +286,6 @@ const CONFIG_PANES = Object.freeze({
     iconSrc: "chrome://global/skin/icons/eye.svg",
     visible: () => srdSectionPrefs.all,
   },
-  ai: {
-    l10nId: "preferences-ai-controls-header3",
-    iconSrc: "chrome://global/skin/icons/highlights.svg",
-    groupIds: ["aiControlsDescription", "aiFeatures", "aiStatesDescription"],
-    module: "chrome://browser/content/preferences/config/aiFeatures.mjs",
-    visible: () =>
-      Services.prefs.getBoolPref("browser.preferences.aiControls", false),
-  },
   downloads: {
     l10nId: "pane-downloads3",
     iconSrc: "chrome://browser/skin/downloads/downloads.svg",
@@ -384,13 +375,6 @@ const CONFIG_PANES = Object.freeze({
     module:
       "chrome://browser/content/preferences/config/passwords-autofill.mjs",
   },
-  manageMemories: {
-    parent: "personalizeSmartWindow",
-    l10nId: "ai-window-manage-memories-header",
-    groupIds: ["manageMemories"],
-    module: "chrome://browser/content/preferences/config/aiFeatures.mjs",
-    supportPage: "smart-window-memories",
-  },
   managePayments: {
     parent: "passwordsAutofill",
     l10nId: "autofill-payment-methods-manage-payments-title",
@@ -425,14 +409,6 @@ const CONFIG_PANES = Object.freeze({
         : [],
     module: "chrome://browser/content/preferences/config/notifications.mjs",
   },
-  personalizeSmartWindow: {
-    parent: "ai",
-    l10nId: "ai-window-personalize-header",
-    iconSrc: "chrome://browser/skin/smart-window-mono-32.svg",
-    badge: "beta",
-    groupIds: ["assistantDefaultGroup", "assistantModelGroup", "memoriesGroup"],
-    module: "chrome://browser/content/preferences/config/aiFeatures.mjs",
-  },
   passwordsAutofill: {
     l10nId: "preferences-passwords-autofill-header",
     iconSrc: "chrome://browser/skin/login.svg",
@@ -445,6 +421,7 @@ const CONFIG_PANES = Object.freeze({
     l10nId: "pane-privacy-section",
     iconSrc: "chrome://browser/skin/preferences/category-privacy-security.svg",
     groupIds: [
+      "vixenShield",
       "securityPrivacyStatus",
       "securityPrivacyWarnings",
       "etpStatus",
@@ -475,6 +452,7 @@ const CONFIG_PANES = Object.freeze({
     l10nId: "account-sync-section",
     iconSrc: "chrome://browser/skin/fxa/avatar-empty.svg",
     groupIds: [
+      "settingsLock",
       "defaultBrowserSync",
       "accountDisabled",
       "account",
@@ -486,14 +464,6 @@ const CONFIG_PANES = Object.freeze({
     ],
     module: "chrome://browser/content/preferences/config/account-sync.mjs",
     replaces: "sync",
-  },
-  moreFromMozilla: {
-    l10nId: "more-from-moz-page-header",
-    iconSrc: "chrome://browser/skin/preferences/mozilla-16.svg",
-    groupIds: ["moreFromMozillaPromo", "moreFromMozillaProducts"],
-    module: "chrome://browser/content/preferences/config/moreFromMozilla.mjs",
-    visible: () => NimbusFeatures.moreFromMozilla.getVariable("enabled"),
-    replaces: "moreFromMozilla",
   },
   tabsBrowsing: {
     l10nId: "tabs-browsing-section",
@@ -652,16 +622,16 @@ function init_all() {
         module: "chrome://browser/content/preferences/config/browser-icon.mjs",
       });
     }
-  } else {
-    NimbusFeatures.moreFromMozilla.recordExposureEvent({ once: true });
-    if (NimbusFeatures.moreFromMozilla.getVariable("enabled")) {
-      document.getElementById("category-more-from-mozilla").hidden = false;
-      gMoreFromMozillaPane.option =
-        NimbusFeatures.moreFromMozilla.getVariable("template");
-      register_module("paneMoreFromMozilla", gMoreFromMozillaPane);
-    }
   }
 
+  ChromeUtils.importESModule(
+    "chrome://browser/content/preferences/config/settings-lock.mjs",
+    { global: "current" }
+  );
+  ChromeUtils.importESModule(
+    "chrome://browser/content/preferences/config/vixen-shield.mjs",
+    { global: "current" }
+  );
   gSearchResultsPane.init();
   gMainPane.preInit();
 

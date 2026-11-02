@@ -2,37 +2,13 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-BROWSER_CHROME_MANIFESTS += [
-    "tests/browser/browser.toml",
-    "tests/browser/perftest.toml",
-]
-
-MOCHITEST_CHROME_MANIFESTS += [
-    "tests/chrome/chrome.toml",
-]
+# Vixen ships without the AI chatbot and link previews. These inert modules
+# keep the paths that other browser code imports, so their menus stay hidden.
 
 with Files("**"):
-    BUG_COMPONENT = ("Core", "Machine Learning: Frontend")
+    BUG_COMPONENT = ("Firefox", "General")
 
 MOZ_SRC_FILES += [
     "GenAI.sys.mjs",
-]
-
-MOZ_SRC_FILES += [
     "LinkPreview.sys.mjs",
-    "LinkPreviewModel.sys.mjs",
-    "PageAssist.sys.mjs",
 ]
-
-MOZ_SRC_FILES += [
-    "GenAIChild.sys.mjs",
-    "GenAIParent.sys.mjs",
-    "LinkPreviewChild.sys.mjs",
-    "LinkPreviewParent.sys.mjs",
-    "PageAssistChild.sys.mjs",
-    "PageAssistParent.sys.mjs",
-]
-
-JAR_MANIFESTS += ["jar.mn"]
-
-XPCSHELL_TESTS_MANIFESTS += ["tests/xpcshell/xpcshell.toml"]

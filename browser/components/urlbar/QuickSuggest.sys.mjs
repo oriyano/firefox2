@@ -281,8 +281,6 @@ const FEATURES = {
     "moz-src:///browser/components/urlbar/private/SportsSuggestions.sys.mjs",
   SuggestBackendMerino:
     "moz-src:///browser/components/urlbar/private/SuggestBackendMerino.sys.mjs",
-  SuggestBackendMl:
-    "moz-src:///browser/components/urlbar/private/SuggestBackendMl.sys.mjs",
   SuggestBackendRust:
     "moz-src:///browser/components/urlbar/private/SuggestBackendRust.sys.mjs",
   TemporalSuggestions:
@@ -370,7 +368,6 @@ class _QuickSuggest {
     return [
       this.rustBackend,
       this.#featuresByName.get("SuggestBackendMerino"),
-      this.#featuresByName.get("SuggestBackendMl"),
     ].filter(b => b?.isEnabled);
   }
 

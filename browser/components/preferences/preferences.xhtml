@@ -44,8 +44,8 @@
   <link rel="localization" href="browser/browser.ftl"/>
     <!-- Used by fontbuilder.js -->
   <link rel="localization" href="browser/preferences/fonts.ftl"/>
-  <link rel="localization" href="browser/preferences/moreFromMozilla.ftl"/>
   <link rel="localization" href="browser/preferences/preferences.ftl"/>
+  <link rel="localization" href="browser/preferences/vixen.ftl"/>
   <link rel="localization" href="toolkit/branding/brandings.ftl"/>
   <link rel="localization" href="toolkit/firefoxlabs/features.ftl"/>
   <link rel="localization" href="toolkit/global/mozPageHeader.ftl"/>
@@ -54,7 +54,6 @@
   <link rel="localization" href="preview/smartTabGroups.ftl"/>
   <link rel="localization" href="preview/privacyPreferences.ftl"/>
   <link rel="localization" href="browser/ipProtection.ftl"/>
-  <link rel="localization" href="browser/aiFeatures.ftl"/>
 
   <!-- Links below are only used for search-l10n-ids into subdialogs -->
   <link rel="localization" href="browser/aboutDialog.ftl"/>
@@ -175,11 +174,6 @@
         iconsrc="chrome://browser/skin/translations.svg"
         data-l10n-id="pane-languages-title2">
       </html:moz-page-nav-button>
-      <html:moz-page-nav-button id="category-ai-features"
-        view="paneAi"
-        iconsrc="chrome://global/skin/icons/highlights.svg"
-        data-l10n-id="pane-ai-controls-title2">
-      </html:moz-page-nav-button>
       <html:moz-page-nav-button id="category-permissions-data"
         view="panePermissionsData"
         iconsrc="chrome://browser/skin/permissions.svg"
@@ -195,12 +189,6 @@
         view="paneAbout"
         iconsrc="chrome://browser/skin/sidebar/firefox.svg"
         data-l10n-id="pane-about-firefox-title">
-      </html:moz-page-nav-button>
-      <html:moz-page-nav-button id="category-more-from-mozilla"
-        hidden="true"
-        view="paneMoreFromMozilla"
-        iconsrc="chrome://browser/skin/preferences/mozilla-16.svg"
-        data-l10n-id="more-from-moz-title2">
       </html:moz-page-nav-button>
 
       <!-- Hidden sub-page entries (CSS display:none via .hidden-category).
@@ -258,7 +246,6 @@
 #include search.inc.xhtml
 #include privacy.inc.xhtml
 #include sync.inc.xhtml
-#include moreFromMozilla.inc.xhtml
         </vbox>
       </vbox>
     </vbox>
