@@ -158,9 +158,6 @@ if CONFIG["MOZ_BACKGROUNDTASKS"]:
 if CONFIG["MOZ_UNIFFI_FIXTURES"]:
     DIRS += ["uniffi-bindgen-gecko-js/tests"]
 
-if CONFIG["NIGHTLY_BUILD"]:
-    DIRS += ["aboutinference"]
-
 if CONFIG["OS_ARCH"] == "WINNT":
     DIRS += ["push"]
 

@@ -274,9 +274,8 @@ FormAutofillUtils = {
    * to rely on ML results.
    */
   get isMLAutofillEnabled() {
-    return (
-      AppConstants.platform !== "android" && FormAutofillUtils.enableMLAutofill
-    );
+    // Vixen ships without machine-learning field detection.
+    return false;
   },
 
   /**

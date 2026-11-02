@@ -78,20 +78,6 @@ suites:
         tests:
             "browser_speech_recognition_perf.js": ""
 
-    toolkit/components/ml/tests/browser:
-        description: "Performance tests running through Mochitest for ML Models"
-        tests:
-            "browser_ml_engine_perf.js": ""
-            "browser_ml_engine_multi_perf.js": ""
-            "ML Semantic History Search": ""
-            "browser_ml_suggest_feature_perf.js": ""
-            "browser_ml_suggest_inference.js": ""
-            "browser_ml_autofill_perf.js": ""
-            "ML Smart Tab Clustering": ""
-            "browser_ml_smart_tab_perf.js": ""
-            "browser_ml_llama_smollm2_smoke.js": ""
-            "browser_ml_llama_summarizer_perf.js": ""
-
     intl/benchmarks/test/xpcshell:
         description: "Performance tests running through XPCShell for Intl code"
         tests:
