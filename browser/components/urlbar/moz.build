@@ -95,7 +95,6 @@ BROWSER_CHROME_MANIFESTS += [
     "tests/browser-autofill/browser.toml",
     "tests/browser-editing/browser.toml",
     "tests/browser-engagementTelemetry/browser.toml",
-    "tests/browser-ml/perftest.toml",
     "tests/browser-newtab/browser.toml",
     "tests/browser-quickactions/browser.toml",
     "tests/browser-results/browser.toml",

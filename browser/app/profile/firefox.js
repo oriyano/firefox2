@@ -2654,17 +2654,6 @@ pref("media.videocontrols.picture-in-picture.auto-close.timeoutMs", 1000);
 
 pref("media.contextmenu.video-overlay-detection", true);
 
-// Enable Firefox translations powered by the Bergamot translations
-// engine https://browser.mt/.
-pref("browser.translations.enable", true);
-
-// Enable Firefox Select translations powered by Bergamot translations
-// engine https://browser.mt/.
-pref("browser.translations.select.enable", true);
-
-// Enable the Translations QuickAction in the URL bar.
-pref("browser.translations.quickAction.enabled", true);
-
 // Telemetry settings.
 // Determines if Telemetry pings can be archived locally.
 pref("toolkit.telemetry.archive.enabled", true);

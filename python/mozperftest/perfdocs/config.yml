@@ -47,19 +47,6 @@ suites:
         tests:
             "browser_pdfjs_alttext_perf.js": ""
 
-    browser/components/urlbar/tests/browser-ml:
-        description: "Performance tests for urlbar features on Firefox Desktop"
-        tests:
-            "browser_urlbar_semantic_history_perf.js": ""
-            "browser_quicksuggest_ml_perf.js": ""
-
-    browser/components/translations/tests/browser:
-        description: "Performance tests for Translations models on Firefox Desktop"
-        tests:
-            "Full-Page Translations Base Model": ""
-            "Full-Page Translations BaseMemory Model": ""
-            "Full-Page Translations Tiny Model": ""
-
     browser/extensions/formautofill/test/browser/performance:
         description: "Performance tests for Form Autofill on Firefox Desktop"
         tests:

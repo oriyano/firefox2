@@ -212,9 +212,6 @@ document.addEventListener(
           });
           break;
         }
-        case "context-translate-selection":
-          gContextMenu.openSelectTranslationsPanel(event);
-          break;
         case "context-turn-on-highlight-menu":
           gContextMenu.turnOnHighlightMenu();
           break;

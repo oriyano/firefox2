@@ -353,7 +353,6 @@ const CONFIG_PANES = Object.freeze({
     groupIds: [
       "browserLanguage",
       "websiteLanguage",
-      "translations",
       "spellCheck",
     ],
     module: "chrome://browser/content/preferences/config/languages.mjs",
@@ -479,17 +478,6 @@ const CONFIG_PANES = Object.freeze({
     iconSrc: "chrome://global/skin/icons/cursor-arrow.svg",
     module: "chrome://browser/content/preferences/config/tabs-browsing.mjs",
     visible: () => srdSectionEnabled("tabsBrowsing"),
-  },
-  translations: {
-    parent: srdSectionEnabled("languages") ? "languages" : "general",
-    l10nId: "settings-translations-subpage-header",
-    groupIds: [
-      "translationsAutomaticTranslation",
-      "translationsDownloadLanguages",
-    ],
-    iconSrc: "chrome://browser/skin/translations.svg",
-    module: "chrome://browser/content/preferences/config/translations.mjs",
-    visible: () => srdSectionEnabled("translations"),
   },
   vpnSiteRules: {
     parent: "privacy",
