@@ -21,6 +21,20 @@ Vixen is built from this Firefox source tree with its own branding and build set
 6. Run `./mach bootstrap` and choose "Firefox for Desktop". It installs the Rust, clang and
    other toolchains the build needs.
 
+7. Optional, for phishing and malware warnings: create a Google Safe Browsing API key
+   (see below) and save it, alone on one line, to `~/.vixen-keys/google-safebrowsing.key`
+   (in Windows, `C:\Users\<you>\.vixen-keys\google-safebrowsing.key`). The mozconfigs pick it
+   up automatically. Never commit this file. Without it, Vixen builds but shows no warnings.
+
+### Getting a Safe Browsing key
+
+1. Sign in at the [Google Cloud console](https://console.cloud.google.com/) and create a project.
+2. Under "APIs & Services" > "Library", enable the "Safe Browsing API".
+3. Under "APIs & Services" > "Credentials", choose "Create credentials" > "API key".
+4. Edit the key: under "API restrictions", restrict it to the Safe Browsing API.
+
+Google allows this key for non-commercial use only. A commercial release needs Google's Web Risk API instead.
+
 ## Building
 
 ```
