@@ -1636,3 +1636,8 @@ setting-pane[onsearchpane] {
     grid-template-columns: 1fr;
   }
 }
+
+:root[settings-locked] :is(setting-group, groupbox)[inert] {
+  opacity: 0.5;
+  filter: grayscale(1);
+}
