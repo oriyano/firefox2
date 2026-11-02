@@ -134,7 +134,7 @@ places-create-bookmark =
           [1] Favorite Page…
          *[other] Favorite Pages…
       }
-  .accesskey = B
+  .accesskey = g
 
 places-untag-bookmark =
   .label = Remove Tag
@@ -296,5 +296,5 @@ places-locked-prompt = The favorites and history system will not be functional b
 # .badge used to promote the sharing menu item; keep it as short as possible.
 places-share-folder3 =
   .label = Share Folder
-  .accesskey = a
+  .accesskey = h
   .badge = New
