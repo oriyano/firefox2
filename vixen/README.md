@@ -71,6 +71,10 @@ The installer is not code-signed yet, so Windows SmartScreen will warn when it r
   connectivity checks, local AI models and Firefox Labs. Remote Settings (blocklists and
   certificate revocation) stays on for security.
 - The health report and Normandy are no longer built (`browser/moz.configure`).
+- All AI features are blocked and the AI Controls page is hidden: chatbot, Smart Window, link
+  previews, smart tab groups, PDF alt text, translations and speech recognition.
+- Only Google and DuckDuckGo are offered as search engines (`browser.search.engineAllowlist`),
+  and sites, users and extensions can't add others.
 
 The Vixen logo is generated into `browser/branding/vixen` (app icons, Windows tiles, installer
 art, New Tab and About logo). The private-browsing and macOS icons are still placeholders.
