@@ -3591,6 +3591,16 @@ export var Policies = {
     },
   },
 
+  SettingsLock: {
+    onBeforeUIStartup(manager, param) {
+      if (param) {
+        lazy.blockAboutPage(manager, "about:config");
+        lazy.PoliciesUtils.setAndLockPref("devtools.chrome.enabled", false);
+        lazy.PoliciesUtils.setAndLockPref("xpinstall.enabled", false);
+      }
+    },
+  },
+
   ShowHomeButton: {
     onBeforeAddons(manager, param) {
       if (param) {

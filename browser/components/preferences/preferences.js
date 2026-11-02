@@ -475,6 +475,7 @@ const CONFIG_PANES = Object.freeze({
     l10nId: "account-sync-section",
     iconSrc: "chrome://browser/skin/fxa/avatar-empty.svg",
     groupIds: [
+      "settingsLock",
       "defaultBrowserSync",
       "accountDisabled",
       "account",
@@ -662,6 +663,10 @@ function init_all() {
     }
   }
 
+  ChromeUtils.importESModule(
+    "chrome://browser/content/preferences/config/settings-lock.mjs",
+    { global: "current" }
+  );
   gSearchResultsPane.init();
   gMainPane.preInit();
 

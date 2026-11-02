@@ -60,3 +60,12 @@ The installer is not code-signed yet, so Windows SmartScreen will warn when it r
 
 The Vixen logo is generated into `browser/branding/vixen` (app icons, Windows tiles, installer
 art, New Tab and About logo). The private-browsing and macOS icons are still placeholders.
+
+## Settings Lock
+
+Settings Lock is at the top of the first Settings page (Account & Sync). Turning it on or off
+shows a Windows administrator prompt and writes or removes the `SettingsLock` policy
+(`HKLM\SOFTWARE\Policies\Mozilla\Vixen`, DWORD 1); it takes effect after a restart. While it
+is on, every settings control is disabled, `about:config` is blocked, and extensions can't be
+installed. An administrator can also set the same registry value directly, for example via
+Group Policy. Editing `prefs.js` or `user.js` in the profile folder is not blocked yet.
