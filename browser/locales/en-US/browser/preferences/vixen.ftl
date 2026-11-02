@@ -25,4 +25,4 @@ vixen-shield-header =
     .description = Extra protection against exploits, phishing and eavesdropping. Some websites may load more slowly or not work correctly.
 vixen-shield-enabled =
     .label = Turn on Vixen Shield
-    .description = Requires HTTPS for every site, turns off the JavaScript just-in-time compiler, enforces strict certificate checks, shows look-alike web addresses in their raw form, blocks notification requests, and limits what sites learn about your network. Restart { -brand-short-name } for every change to take effect.
+    .description = Requires HTTPS for every site, turns off the JavaScript just-in-time compiler, enforces strict certificate checks, shows look-alike web addresses in their raw form, blocks notification requests, uses encrypted DNS only, blocks fingerprinting and trackers, tightens cookie rules, and limits what sites learn about your network. Restart { -brand-short-name } for every change to take effect.

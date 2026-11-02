@@ -94,4 +94,13 @@ A switch at the top of Privacy & Security (`vixen.shield.enabled`). When on, `Vi
 changes the default values of a set of hardening prefs: HTTPS-Only mode, strict certificate
 pinning and OCSP, mixed-content blocking, no JavaScript/WebAssembly JIT, punycode for
 look-alike domains, blocked notification requests, WebRTC IP protection, trimmed cross-site
-referrers and no PDF scripting. Settings the user changed explicitly keep their value.
+referrers and no PDF scripting. It also turns on DNS over HTTPS with no plain-DNS fallback,
+SameSite=Lax cookies by default, fingerprinting protection, tracking and social-tracker blocking,
+query-parameter stripping, Global Privacy Control, a prompt before opening new download types,
+no WebRTC host candidates, blocking local-network access from trackers, and stricter TLS (safe
+renegotiation required, no 0-RTT). Settings the user changed explicitly keep their value.
+
+Always on, with or without Shield: CSP, SRI, CORS, Trusted Types, frame-ancestors and
+X-Frame-Options, COOP/COEP, active mixed-content blocking, cookie prefixes, local network
+access prompts, CRLite and Certificate Transparency enforcement, Safe Browsing (with a key) and
+enterprise policies.

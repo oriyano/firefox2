@@ -30,6 +30,26 @@ const HARDENED_PREFS = {
   "pdfjs.enableScripting": false,
   // Extensions.
   "extensions.quarantinedDomains.enabled": true,
+  // TLS and certificates.
+  "security.ssl.require_safe_negotiation": true,
+  "security.tls.enable_0rtt_data": false,
+  // Encrypted DNS only (DNS over HTTPS, no fallback to plain DNS).
+  "network.trr.mode": 3,
+  // Cookies and cross-site request forgery.
+  "network.cookie.sameSite.laxByDefault": true,
+  "network.cookie.cookieBehavior": 5,
+  // Downloads: always ask before opening new file types.
+  "browser.download.always_ask_before_handling_new_types": true,
+  // Local network access from known trackers.
+  "network.lna.block_trackers": true,
+  // WebRTC: never expose local IP addresses.
+  "media.peerconnection.ice.no_host": true,
+  // Tracking and fingerprinting.
+  "privacy.fingerprintingProtection": true,
+  "privacy.trackingprotection.enabled": true,
+  "privacy.trackingprotection.socialtracking.enabled": true,
+  "privacy.query_stripping.enabled": true,
+  "privacy.globalprivacycontrol.enabled": true,
 };
 
 const savedDefaults = new Map();
