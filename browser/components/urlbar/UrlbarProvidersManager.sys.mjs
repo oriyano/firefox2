@@ -84,11 +84,6 @@ var localProviderModules = [
     supportedSAPs: ["newtab_searchbar", "searchbar", "smartbar", "urlbar"],
   },
   {
-    name: "UrlbarProviderAiChat",
-    module: "moz-src:///browser/components/urlbar/UrlbarProviderAiChat.sys.mjs",
-    supportedSAPs: ["smartbar", "urlbar"],
-  },
-  {
     name: "UrlbarProviderClipboard",
     module:
       "moz-src:///browser/components/urlbar/UrlbarProviderClipboard.sys.mjs",
