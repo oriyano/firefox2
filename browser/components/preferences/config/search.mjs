@@ -753,7 +753,7 @@ function EngineListItemSetting(settingId, engine) {
 Preferences.addSetting({
   id: "addEngineButton",
   visible() {
-    return Services.policies.isAllowed("installSearchEngine");
+    return lazy.SearchUtils.canInstallEngines;
   },
   onUserClick() {
     window.gSubDialog.open(

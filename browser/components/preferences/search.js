@@ -57,8 +57,9 @@ var gSearchPane = {
     this._engineStore.init().catch(console.error);
 
     if (
-      Services.policies &&
-      !Services.policies.isAllowed("installSearchEngine")
+      (Services.policies &&
+        !Services.policies.isAllowed("installSearchEngine")) ||
+      Services.prefs.getStringPref("browser.search.engineAllowlist", "")
     ) {
       document.getElementById("addEnginesBox").hidden = true;
     } else {

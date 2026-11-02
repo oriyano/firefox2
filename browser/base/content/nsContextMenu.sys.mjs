@@ -2557,7 +2557,7 @@ export class nsContextMenu {
       this.onSearchField &&
       !this.isLoginForm() &&
       (uri.schemeIs("http") || uri.schemeIs("https")) &&
-      Services.policies.isAllowed("installSearchEngine")
+      lazy.SearchUtils.canInstallEngines
     );
   }
 

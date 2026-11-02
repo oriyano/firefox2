@@ -236,7 +236,10 @@ class _OpenSearchManager {
    *   The installable open search engines.
    */
   getInstallableEngines(browser) {
-    if (!Services.policies.isAllowed("installSearchEngine")) {
+    if (
+      !Services.policies.isAllowed("installSearchEngine") ||
+      Services.prefs.getStringPref("browser.search.engineAllowlist", "")
+    ) {
       return [];
     }
     return this.getEngines(browser);

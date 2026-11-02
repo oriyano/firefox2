@@ -99,3 +99,37 @@ pref("network.connectivity-service.enabled", false, locked);
 // Vixen: extensions must be signed; Vixen Shield is off until the user turns it on.
 pref("xpinstall.signatures.required", true);
 pref("vixen.shield.enabled", false);
+
+// Vixen: no AI features. The AI Controls settings page is hidden and every AI feature is blocked.
+pref("browser.preferences.aiControls", false, locked);
+pref("browser.ai.control.default", "blocked", locked);
+pref("browser.ai.control.translations", "blocked", locked);
+pref("browser.ai.control.pdfjsAltText", "blocked", locked);
+pref("browser.ai.control.smartTabGroups", "blocked", locked);
+pref("browser.ai.control.linkPreviewKeyPoints", "blocked", locked);
+pref("browser.ai.control.sidebarChatbot", "blocked", locked);
+pref("browser.ai.control.smartWindow", "blocked", locked);
+pref("browser.ai.control.speechRecognition", "blocked", locked);
+pref("browser.ml.chat.enabled", false, locked);
+pref("browser.ml.chat.page", false, locked);
+pref("browser.ml.chat.menu", false, locked);
+pref("browser.ml.chat.sidebar", false, locked);
+pref("browser.ml.chat.shortcuts", false, locked);
+pref("browser.ml.chat.provider", "", locked);
+pref("browser.ml.linkPreview.enabled", false, locked);
+pref("browser.ml.pageAssist.enabled", false, locked);
+pref("browser.smartwindow.enabled", false, locked);
+pref("browser.tabs.groups.smart.enabled", false, locked);
+pref("browser.tabs.groups.smart.userEnabled", false, locked);
+pref("browser.translations.enable", false, locked);
+pref("pdfjs.enableAltText", false, locked);
+pref("pdfjs.enableGuessAltText", false, locked);
+pref("pdfjs.enableAltTextModelDownload", false, locked);
+pref("media.webspeech.recognition.enable", false, locked);
+pref("places.semanticHistory.featureGate", false, locked);
+pref("browser.urlbar.quicksuggest.mlEnabled", false, locked);
+pref("extensions.ml.enabled", false, locked);
+pref("browser.search.visualSearch.featureGate", false, locked);
+
+// Vixen: only Google and DuckDuckGo are available as search engines, and no others can be added.
+pref("browser.search.engineAllowlist", "google,ddg", locked);

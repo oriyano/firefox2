@@ -2622,6 +2622,16 @@ export const SearchService = new (class SearchService {
     if (this.#engineMatchesIgnoreLists(engine)) {
       return;
     }
+    if (
+      lazy.SearchUtils.engineAllowlist.length &&
+      !(engine instanceof lazy.ConfigSearchEngine)
+    ) {
+      lazy.logConsole.debug(
+        "#addEngineToStore: Engine not in the allowlist:",
+        engine.name
+      );
+      return;
+    }
 
     lazy.logConsole.debug("#addEngineToStore: Adding engine:", engine.name);
 

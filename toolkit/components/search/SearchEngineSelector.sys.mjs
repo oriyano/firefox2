@@ -257,6 +257,13 @@ export class SearchEngineSelector {
       );
     }
 
+    let allowlist = lazy.SearchUtils.engineAllowlist;
+    if (allowlist.length) {
+      refinedSearchConfig.engines = refinedSearchConfig.engines.filter(e =>
+        allowlist.includes(e.identifier)
+      );
+    }
+
     if (
       !refinedSearchConfig.appDefaultEngineId ||
       !refinedSearchConfig.engines.find(

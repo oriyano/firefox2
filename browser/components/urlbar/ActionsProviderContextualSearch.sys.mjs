@@ -378,6 +378,7 @@ class ProviderContextualSearch extends ActionsProvider {
       !queryContext.isPrivate &&
       type != INSTALLED_ENGINE &&
       Services.policies.isAllowed("installSearchEngine") &&
+      !Services.prefs.getStringPref("browser.search.engineAllowlist", "") &&
       (await lazy.SearchService.shouldShowInstallPrompt(engine))
     ) {
       this.#showInstallPrompt(controller, engine);
