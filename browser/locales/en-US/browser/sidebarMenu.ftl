@@ -3,9 +3,9 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 sidebar-menu-bookmarks =
-  .label = Bookmarks
+  .label = Favorites
 
-sidebar-menu-bookmarks-2 = Bookmarks
+sidebar-menu-bookmarks-2 = Favorites
 
 sidebar-menu-history =
   .label = History

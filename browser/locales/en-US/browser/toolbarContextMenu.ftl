@@ -12,10 +12,10 @@ toolbar-context-menu-reload-selected-tabs =
     .label = Reload Selected Tabs
     .accesskey = R
 toolbar-context-menu-bookmark-selected-tab =
-    .label = Bookmark Selected Tab…
+    .label = Favorite Selected Tab…
     .accesskey = T
 toolbar-context-menu-bookmark-selected-tabs =
-    .label = Bookmark Selected Tabs…
+    .label = Favorite Selected Tabs…
     .accesskey = T
 toolbar-context-menu-select-all-tabs =
     .label = Select All Tabs
@@ -93,7 +93,7 @@ toolbar-context-menu-bookmarks-toolbar-on-new-tab-2 =
     .accesskey = O
 
 toolbar-context-menu-bookmarks-show-other-bookmarks =
-    .label = Show Other Bookmarks
+    .label = Show Other Favorites
     .accesskey = h
 
 toolbar-context-menu-menu-bar-cmd =

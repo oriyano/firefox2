@@ -40,7 +40,7 @@ fxviewtabrow-open-in-window = Open in New Window
 fxviewtabrow-open-in-private-window = Open in New Private Window
     .accesskey = P
 # “Bookmark” is a verb, as in "Bookmark this page" (add to bookmarks).
-fxviewtabrow-add-bookmark = Bookmark…
+fxviewtabrow-add-bookmark = Favorite…
     .accesskey = B
 fxviewtabrow-save-to-pocket = Save to { -pocket-brand-name }
     .accesskey = o

@@ -11,7 +11,7 @@ sync-disconnect-dialog-button = Disconnect
 fxa-signout-dialog-title2 = Sign out of your account?
 fxa-signout-dialog-body = Synced data will remain in your account.
 fxa-signout-dialog2-button = Sign out
-fxa-signout-dialog2-checkbox = Delete data from this device (passwords, history, bookmarks, etc.)
+fxa-signout-dialog2-checkbox = Delete data from this device (passwords, history, favorites, etc.)
 
 fxa-menu-sync-settings =
     .label = Sync settings
@@ -108,7 +108,7 @@ sync-setup-verify-heading = Are you sure you want to sign in to sync?
 # that they will be merging the data from the previously signed in into the newly signed in one
 # Variables:
 #   $email - Email address of a user previously signed into sync.
-sync-setup-verify-description = A different user was previously signed in to sync on this computer. Signing in will merge this browser’s bookmarks, passwords and other settings with { $email }
+sync-setup-verify-description = A different user was previously signed in to sync on this computer. Signing in will merge this browser’s favorites, passwords and other settings with { $email }
 
 ## Sync warning strings that support the browser profiles feature, these will be shown when the user might be merging data
 
@@ -144,7 +144,7 @@ sync-account-already-signed-in-header = This account is signed in to another pro
 #   $acctEmail (String) - Email of the account signing into sync.
 #   $currentProfile (String): Name of the current profile signing in
 #   $otherProfile (String): Name of the profile that is already signed in
-sync-account-in-use-description-merge = { $acctEmail } is signed in to the “{ $otherProfile }” profile on this computer. Syncing the “{ $currentProfile }” profile will permanently combine data from both profiles, such as passwords and bookmarks.
+sync-account-in-use-description-merge = { $acctEmail } is signed in to the “{ $otherProfile }” profile on this computer. Syncing the “{ $currentProfile }” profile will permanently combine data from both profiles, such as passwords and favorites.
 
 # Variables:
 #   $profileName (String) - Name of the profile to switch to

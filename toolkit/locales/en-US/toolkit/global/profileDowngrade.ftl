@@ -9,8 +9,8 @@ profiledowngrade-window2 =
 profiledowngrade-window-create =
     .label = Create New Profile
 
-profiledowngrade-sync2 = Using an older version of { -brand-product-name } can corrupt bookmarks and browsing history already saved to an existing { -brand-product-name } profile. To protect your information, create a new profile for this installation of { -brand-short-name }. You can always sign in with an account to sync your bookmarks and browsing history between profiles.
-profiledowngrade-nosync = Using an older version of { -brand-product-name } can corrupt bookmarks and browsing history already saved to an existing { -brand-product-name } profile. To protect your information, create a new profile for this installation of { -brand-short-name }.
+profiledowngrade-sync2 = Using an older version of { -brand-product-name } can corrupt favorites and browsing history already saved to an existing { -brand-product-name } profile. To protect your information, create a new profile for this installation of { -brand-short-name }. You can always sign in with an account to sync your favorites and browsing history between profiles.
+profiledowngrade-nosync = Using an older version of { -brand-product-name } can corrupt favorites and browsing history already saved to an existing { -brand-product-name } profile. To protect your information, create a new profile for this installation of { -brand-short-name }.
 
 profiledowngrade-quit =
     .label = { PLATFORM() ->

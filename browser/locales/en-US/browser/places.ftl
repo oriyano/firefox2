@@ -12,7 +12,7 @@ places-open-in-container-tab =
   .label = Open in New Container Tab
   .accesskey = i
 places-open-all-bookmarks =
-  .label = Open All Bookmarks
+  .label = Open All Favorites
   .accesskey = O
 places-open-all-in-tabs =
   .label = Open All in Tabs
@@ -28,8 +28,8 @@ places-empty-bookmarks-folder =
   .label = (Empty)
 
 places-add-bookmark =
-  .label = Add Bookmark…
-  .accesskey = k
+  .label = Add Favorite…
+  .accesskey = a
 places-add-folder-contextmenu =
   .label = Add Folder…
   .accesskey = F
@@ -64,7 +64,7 @@ places-history-search =
 places-history =
   .aria-label = History
 places-bookmarks-search =
-  .placeholder = Search bookmarks
+  .placeholder = Search favorites
 
 places-forget-domain-data =
   .label = Forget About This Site…
@@ -74,7 +74,7 @@ places-sortby-name =
   .accesskey = r
 # places-edit-bookmark and places-edit-generic will show one or the other and can have the same access key.
 places-edit-bookmark =
-  .label = Edit Bookmark…
+  .label = Edit Favorite…
   .accesskey = E
 places-edit-generic =
   .label = Edit…
@@ -103,14 +103,14 @@ places-delete-page =
 
 # Managed bookmarks are created by enterprise policy and cannot be changed by the user.
 managed-bookmarks =
-  .label = Managed bookmarks
+  .label = Managed favorites
 # This label is used when a managed bookmarks folder doesn't have a name.
 managed-bookmarks-subfolder =
   .label = Subfolder
 
 # This label is used for the "Other Bookmarks" folder that appears in the bookmarks toolbar.
 other-bookmarks-folder =
-  .label = Other Bookmarks
+  .label = Other Favorites
 
 places-show-in-folder =
   .label = Show in Folder
@@ -121,8 +121,8 @@ places-show-in-folder =
 places-delete-bookmark =
   .label =
       { $count ->
-          [1] Delete Bookmark
-         *[other] Delete Bookmarks
+          [1] Delete Favorite
+         *[other] Delete Favorites
       }
   .accesskey = D
 
@@ -131,8 +131,8 @@ places-delete-bookmark =
 places-create-bookmark =
   .label =
       { $count ->
-          [1] Bookmark Page…
-         *[other] Bookmark Pages…
+          [1] Favorite Page…
+         *[other] Favorite Pages…
       }
   .accesskey = B
 
@@ -141,7 +141,7 @@ places-untag-bookmark =
   .accesskey = R
 
 places-manage-bookmarks =
-  .label = Manage Bookmarks
+  .label = Manage Favorites
   .accesskey = M
 
 places-library3 =
@@ -149,7 +149,7 @@ places-library3 =
 
 places-organize-button =
   .label = Organize
-  .tooltiptext = Organize your bookmarks
+  .tooltiptext = Organize your favorites
   .accesskey = O
 
 places-file-close =
@@ -186,7 +186,7 @@ places-view-sort-descending =
 
 places-maintenance-button =
   .label = Import and Backup
-  .tooltiptext = Import and backup your bookmarks
+  .tooltiptext = Import and backup your favorites
   .accesskey = I
 
 places-cmd-backup =
@@ -202,11 +202,11 @@ places-cmd-restore-from-file =
   .accesskey = C
 
 places-import-bookmarks-from-html =
-  .label = Import Bookmarks from HTML…
+  .label = Import Favorites from HTML…
   .accesskey = I
 
 places-export-bookmarks-to-html =
-  .label = Export Bookmarks to HTML…
+  .label = Export Favorites to HTML…
   .accesskey = E
 
 places-import-other-browser =
@@ -282,7 +282,7 @@ places-details-pane-items-count =
 ## "Search History" stands for "Search through the browser's history".
 
 places-search-bookmarks =
-    .placeholder = Search Bookmarks
+    .placeholder = Search Favorites
 places-search-history =
     .placeholder = Search History
 places-search-downloads =
@@ -290,7 +290,7 @@ places-search-downloads =
 
 ##
 
-places-locked-prompt = The bookmarks and history system will not be functional because one of { -brand-short-name }’s files is in use by another application. Some security software can cause this problem.
+places-locked-prompt = The favorites and history system will not be functional because one of { -brand-short-name }’s files is in use by another application. Some security software can cause this problem.
 
 # Share is a verb here. Meaning to "Share" the bookmark "Folder"
 # .badge used to promote the sharing menu item; keep it as short as possible.

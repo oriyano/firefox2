@@ -210,7 +210,7 @@ disable-extension =
 
 preferences-data-migration-group =
     .label = Import browser data
-    .description = Bring your bookmarks, passwords, history, extensions, and autofill data from another browser.
+    .description = Bring your favorites, passwords, history, extensions, and autofill data from another browser.
 preferences-data-migration-button =
     .label = Import data
     .accesskey = m
@@ -229,7 +229,7 @@ preferences-profiles-settings-button =
 # This string labels the entire copy profile section in the profiles sub-pane.
 preferences-copy-profile-header =
     .label = Copy an existing profile
-    .description = The new profile will copy your settings, add-ons, history, and saved data like bookmarks and passwords — but not your account or sync info.
+    .description = The new profile will copy your settings, add-ons, history, and saved data like favorites and passwords — but not your account or sync info.
 # This string sits next to the copy controls, both the copy-profile-select
 # drop-down and the copy-profile-button, so that the user understands they
 # need to first pick a profile to copy, and then click the copy button.
@@ -1018,7 +1018,7 @@ home-custom-homepage-current-pages-button =
 
 # Button that appears in-line after text "Replace with" (home-custom-homepage-replace-with-prompt)
 home-custom-homepage-bookmarks-button =
-    .label = Bookmarks…
+    .label = Favorites…
 
 # Dropdown option shown when an extension replaces the contents of new windows or tabs.
 # Variables:
@@ -1097,8 +1097,8 @@ addressbar-locbar-history-option =
     .label = Browsing history
     .accesskey = h
 addressbar-locbar-bookmarks-option =
-    .label = Bookmarks
-    .accesskey = k
+    .label = Favorites
+    .accesskey = a
 addressbar-locbar-clipboard-option =
     .label = Clipboard
     .accesskey = C
@@ -1202,7 +1202,7 @@ search-keyword-warning-title = Duplicate Keyword
 # Variables:
 #   $name (string) - Name of a search engine.
 search-keyword-warning-engine = You have chosen a keyword that is currently in use by “{ $name }”. Please select another.
-search-keyword-warning-bookmark = You have chosen a keyword that is currently in use by a bookmark. Please select another.
+search-keyword-warning-bookmark = You have chosen a keyword that is currently in use by a favorite. Please select another.
 
 # This warning is displayed when the chosen name is already in use.
 # Variables:
@@ -1284,7 +1284,7 @@ account-placeholder2 =
 ## more discrete ("signed in" no longer means "and sync is connected").
 
 sync-signedout-caption = Take Your Web With You
-sync-signedout-description2 = Synchronize your bookmarks, history, tabs, passwords, add-ons, and settings across all your devices.
+sync-signedout-description2 = Synchronize your favorites, history, tabs, passwords, add-ons, and settings across all your devices.
 
 sync-signedout-account-signin3 =
     .label = Sign in to sync…
@@ -1383,12 +1383,12 @@ prefs-syncing-off = Syncing: OFF
 
 prefs-syncing-off-2 =
     .label = Syncing is OFF
-    .description = Turn on sync to get your bookmarks, passwords, history, and more on any device.
+    .description = Turn on sync to get your favorites, passwords, history, and more on any device.
 
 # This string is shown when the user's device has per-device syncing enabled but sync is disabled on the device.
 prefs-syncing-off-3 =
     .label = Syncing is OFF
-    .description = Turn on sync to get your bookmarks, passwords, history, and more on this device.
+    .description = Turn on sync to get your favorites, passwords, history, and more on this device.
 
 prefs-sync-turn-on-syncing =
     .label = Turn on syncing…
@@ -1398,7 +1398,7 @@ prefs-sync-turn-on-syncing-2 =
     .label = Turn on syncing
     .accesskey = s
 
-prefs-sync-offer-setup-label2 = Synchronize your bookmarks, history, tabs, passwords, add-ons, and settings across all your devices.
+prefs-sync-offer-setup-label2 = Synchronize your favorites, history, tabs, passwords, add-ons, and settings across all your devices.
 
 prefs-sync-now-button =
     .label = Sync Now
@@ -1431,7 +1431,7 @@ sync-syncing-across-devices-empty-state3 =
     .label = Manage synced data
     .description = You aren’t syncing anything… yet. Choose what to sync on this device.
 
-sync-currently-syncing-bookmarks = Bookmarks
+sync-currently-syncing-bookmarks = Favorites
 sync-currently-syncing-history = History
 sync-currently-syncing-tabs = Open tabs
 sync-currently-syncing-passwords = Passwords
@@ -1470,8 +1470,8 @@ sync-choose-what-to-sync-dialog5 =
     .buttonaccesskeyextra2 = D
 
 sync-engine-bookmarks =
-    .label = Bookmarks
-    .accesskey = m
+    .label = Favorites
+    .accesskey = a
 
 sync-engine-history =
     .label = History

@@ -341,10 +341,10 @@ appmenu-sync-promo-connectdevice =
     .heading = Grab your mobile tabs
 appmenu-sync-promo-connectdevice-cta = Connect a device
 appmenu-bookmarks-sync-promo-turnonsync =
-    .heading = Bring your bookmarks with you
+    .heading = Bring your favorites with you
 # This refers to having your bookmarks available on your mobile device via sync
 appmenu-bookmarks-sync-promo-connectdevice =
-    .heading = Take your bookmarks to go
+    .heading = Take your favorites to go
 
 ##
 
@@ -488,7 +488,7 @@ fxa-menu-create-profile-subpanel =
 
 fxa-menu-create-profile-heading = Level up your browsing with a new profile
 
-fxa-menu-create-profile-description = Keep your bookmarks, passwords, and history separate for work and personal browsing.
+fxa-menu-create-profile-description = Keep your favorites, passwords, and history separate for work and personal browsing.
 
 fxa-menu-create-profile-confirm =
     .label = Create new profile

@@ -81,7 +81,7 @@ about-private-browsing-spotlight-basics-subtitle = Private Windows help keep you
 # introducing information about what users should know about Private Windows.
 about-private-browsing-spotlight-basics-what-to-know = What to know
 about-private-browsing-spotlight-basics-activity-seen = Some activity may still be seen by sites, search engines, internet providers, or your employer.
-about-private-browsing-spotlight-basics-bookmarks-downloads = Bookmarks and downloads stay on your device and may appear in the address bar.
+about-private-browsing-spotlight-basics-bookmarks-downloads = Favorites and downloads stay on your device and may appear in the address bar.
 # This is a section header in the Private Window basics spotlight dialog,
 # introducing additional privacy protection features available in { -brand-short-name }.
 about-private-browsing-spotlight-basics-more-privacy = More privacy protections

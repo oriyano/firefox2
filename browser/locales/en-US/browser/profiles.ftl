@@ -7,7 +7,7 @@ profile-window-title-2 = { -brand-short-name } - Choose a profile
 profile-window-logo =
     .alt = { -brand-short-name } logo
 profile-window-heading = Choose a { -brand-short-name } profile
-profile-window-body = Keep your work and personal browsing, including things like passwords and bookmarks, totally separate. Or create profiles for everyone who uses this device.
+profile-window-body = Keep your work and personal browsing, including things like passwords and favorites, totally separate. Or create profiles for everyone who uses this device.
 # This checkbox appears in the Choose profile window that appears when the browser is opened. "Show this" refers to this window, which is displayed when the checkbox is enabled.
 profile-window-checkbox-label-2 =
     .label = Choose a profile when { -brand-short-name } opens
@@ -105,7 +105,7 @@ delete-profile-description = { -brand-short-name } will permanently delete the f
 delete-profile-windows = Open windows
 # Open is an adjective, as in "browser tabs currently open".
 delete-profile-tabs = Open tabs
-delete-profile-bookmarks = Bookmarks
+delete-profile-bookmarks = Favorites
 delete-profile-history = History (visited pages, cookies, site data)
 delete-profile-autofill = Autofill data (addresses, payment methods)
 delete-profile-logins = Passwords

@@ -4,7 +4,7 @@
 
 
 profiles-title = About Profiles
-profiles-subtitle = This page helps you to manage your profiles. Each profile is a separate world which contains separate history, bookmarks, settings and add-ons.
+profiles-subtitle = This page helps you to manage your profiles. Each profile is a separate world which contains separate history, favorites, settings and add-ons.
 profiles-create = Create a New Profile
 profiles-restart-title = Restart
 profiles-restart-in-safe-mode = Restart with Add-ons Disabled…

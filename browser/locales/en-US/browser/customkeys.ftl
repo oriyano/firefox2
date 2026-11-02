@@ -81,7 +81,7 @@ customkeys-history-reopen-window = Reopen Last Closed window
 
 customkeys-sidebar-toggle = Toggle Sidebar
 
-customkeys-view-bookmarks-toolbar = Toggle Bookmarks Toolbar
+customkeys-view-bookmarks-toolbar = Toggle Favorites Toolbar
 customkeys-view-picture-in-picture = Picture-in-Picture
 customkeys-view-add-split-view = Add Split View
 # Separate is a verb
